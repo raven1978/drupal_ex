@@ -1,0 +1,216 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from files:
+#  path.module,v 1.138.2.3 2008/11/22 10:49:15 dries
+#  path.admin.inc,v 1.7.2.1 2008/11/22 10:49:15 dries
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2009-08-07 11:36+0200\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/path/path.module:16
+msgid ""
+"<p>Some examples of URL aliases are:</p>\n"
+"<ul>\n"
+"<li>user/login =&gt; login</li>\n"
+"<li>image/tid/16 =&gt; store</li>\n"
+"<li>taxonomy/term/7+19+20+21 =&gt; store/products/whirlygigs</li>\n"
+"<li>node/3 =&gt; contact</li>\n"
+"</ul>\n"
+msgstr ""
+"<p>Alcuni esempi di alias sono:</p>\r\n"
+"<ul>\r\n"
+"<li>user/login =&gt; accedi</li>\r\n"
+"<li>image/tid/16 =&gt; magazzino</li>\r\n"
+"<li>taxonomy/term/7+19+20+21 =&gt; magazzino/prodotti/trottole</li>\r\n"
+"<li>node/3 =&gt; contattaci</li>\r\n"
+"</ul>\n"
+
+#: modules/path/path.module:31
+msgid ""
+"Enter the path you wish to create the alias for, followed by the name of the "
+"new alias."
+msgstr ""
+"Inserisci il percorso per cui vuoi creare l'alias, seguito dal nome del "
+"nuovo alias."
+
+#: modules/path/path.module:40
+msgid "URL aliases"
+msgstr "Alias URL"
+
+#: modules/path/path.module:41
+msgid "Change your site's URL paths by aliasing them."
+msgstr "Cambia i percorsi URL del tuo sito definendo degli alias."
+
+#: modules/path/path.module:47
+msgid "Edit alias"
+msgstr "Modifica alias"
+
+#: modules/path/path.module:54
+msgid "Delete alias"
+msgstr "Elimina alias"
+
+#: modules/path/path.module:67
+msgid "Add alias"
+msgstr "Aggiungi alias"
+
+#: modules/path/path.admin.inc:167
+msgid "Are you sure you want to delete path alias %title?"
+msgstr "Sei sicuro di voler eliminare l'alias %title di questo percorso?"
+
+#: modules/path/path.module:82
+msgid "The alias has been deleted."
+msgstr "L'alias è stato eliminato."
+
+#: modules/path/path.admin.inc:93
+msgid "Existing system path"
+msgstr "Percorso di sistema esistente"
+
+#: modules/path/path.admin.inc:97
+msgid ""
+"Specify the existing path you wish to alias. For example: node/28, forum/1, "
+"taxonomy/term/1+2."
+msgstr ""
+"Specifica il percorso esistente di cui creare un alias. Per esempio: "
+"node/28, forum/1, taxonomy/term/1+2."
+
+#: modules/path/path.admin.inc:107
+msgid ""
+"Specify an alternative path by which this data can be accessed. For example, "
+"type \"about\" when writing an about page. Use a relative path and don't add "
+"a trailing slash or the URL alias won't work."
+msgstr ""
+"Specifica un percorso alternativo per l'accesso ai dati. Per esempio scrivi "
+"\"about\" per la pagina di about. Usa un percorso relativo e non aggiungere "
+"la barra iniziale altrimenti l'alias dell'URL non funzionerà."
+
+#: modules/path/path.admin.inc:118
+msgid "Update alias"
+msgstr "Aggiorna alias"
+
+#: modules/path/path.admin.inc:121
+msgid "Create new alias"
+msgstr "Crea nuovo alias"
+
+#: modules/path/path.module:143
+msgid "The path is already in use."
+msgstr "Il percorso è già utilizzato."
+
+#: modules/path/path.module:186
+msgid "URL path settings"
+msgstr "Impostazioni percorso URL"
+
+#: modules/path/path.module:198
+msgid ""
+"Optionally specify an alternative URL by which this node can be accessed. "
+"For example, type \"about\" when writing an about page. Use a relative path "
+"and don't add a trailing slash or the URL alias won't work."
+msgstr ""
+"Specifica in via facoltativa un URL alternativo attraverso il quale questo "
+"nodo può essere raggiunto. Per esempio, digita \"about\" scrivendo una "
+"pagina about. Usa un percorso relativo e non aggiungere uno slash finale o "
+"l'alias dell'URL non funzionerà."
+
+#: modules/path/path.admin.inc:30
+msgid "Alias"
+msgstr "Alias"
+
+#: modules/path/path.admin.inc:54
+msgid "No URL aliases available."
+msgstr "Nessun alias disponibile per l'URL."
+
+#: modules/path/path.admin.inc:154
+msgid "The alias has been saved."
+msgstr "L'alias è stato salvato."
+
+#: modules/path/path.module:213
+msgid "create url aliases"
+msgstr "crea alias"
+
+#: modules/path/path.module:213
+msgid "administer url aliases"
+msgstr "amministra gli alias"
+
+#: modules/path/path.module:15
+msgid ""
+"The path module allows you to specify aliases for Drupal URLs. Such aliases "
+"improve readability of URLs for your users and may help internet search "
+"engines to index your content more effectively. More than one alias may be "
+"created for a given page."
+msgstr ""
+"Il modulo path ti permette di specificare alias per   gli URL Drupal. Tali "
+"alias migliorarno la leggibilità e aumento l'efficacia dell'indicizzazione "
+"dei motori di ricerca. Puoi creare più di un alias per ogni pagina."
+
+#: modules/path/path.admin.inc:54
+msgid "No URL aliases found."
+msgstr "Nessun alias di URL trovato."
+
+#: modules/path/path.admin.inc:103
+msgid "Path alias"
+msgstr "Alias di percorso"
+
+#: modules/path/path.admin.inc:139
+msgid "The alias %alias is already in use in this language."
+msgstr "L'alias %alias è già in uso con questa lingua."
+
+#: modules/path/path.admin.inc:194
+msgid "Filter aliases"
+msgstr "Filtra alias"
+
+#: modules/path/path.module:24
+msgid ""
+"The path module enables appropriately permissioned users to specify an "
+"optional alias in all node input and editing forms, and provides an "
+"interface to view and edit all URL aliases. The two permissions related to "
+"URL aliasing are <em>administer url aliases</em> and <em>create url aliases</"
+"em>. "
+msgstr ""
+"Il modulo 'path' consente agli utenti con gli appropriati permessi di "
+"specificare un alias opzionale in tutti i campi di input del nodo e nei form "
+"di modifica, e fornisce un'interfaccia per visualizzare ed editare tutti gli "
+"alias dell'URL. I due permessi relativi all'alias dell'URL sono "
+"<em>amministra alias degli url</em> e <em>crea alias degli url</em>. "
+
+#: modules/path/path.module:25
+msgid ""
+"This module also provides user-defined mass URL aliasing capabilities, which "
+"is useful if you wish to uniformly use URLs different from the default. For "
+"example, you may want to have your URLs presented in a different language. "
+"Access to the Drupal source code on the web server is required to set up "
+"mass URL aliasing. "
+msgstr ""
+"Questo modulo consente di realizzare cambiamenti secondo regole decise "
+"dall'utente ad una moltitudine di URL, che può essere utile se dovete "
+"impiegare le URL in un modo diverso dal solito. Per esempio potreste avere "
+"bisogno di variare le URL in base alla lingua selezionata. Per fare questo "
+"cambiamento su una moltitudine di URL è necessario poter modificare i "
+"sorgenti di Drupal nel server web. "
+
+#: modules/path/path.module:26
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@path"
+"\">Path module</a>."
+msgstr ""
+"Per maggiori informazioni consulta il manuale on-line per il <a href=\"@path"
+"\">modulo 'path'</a>."
+
+#: modules/path/path.module:29
+msgid ""
+"Drupal provides complete control over URLs through aliasing, which is often "
+"used to make URLs more readable or easy to remember. For example, the alias "
+"'about' may be mapped onto the post at the system path 'node/1', creating a "
+"more meaningful URL. Each system path can have multiple aliases."
+msgstr ""
+"Drupal fornisce un completo controllo sugli URL tramite gli alias, che sono "
+"spesso usati per rendere gli URL più leggibili e facilmente ricordabili. Per "
+"esempio l'alias 'about' potrebbe essere utilizzato per condurre al percorso "
+"di sistema 'node/1', creando un URL più significativo. Ogni percorso di "
+"sistema può avere più di un alias."

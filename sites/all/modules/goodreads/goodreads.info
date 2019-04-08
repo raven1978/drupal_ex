@@ -1,0 +1,5 @@
+;$Id$
+name = "Goodreads Bookshelf"
+description = "Displays items from a Goodreads Bookshelf"
+core = 6.x
+php = 5.1

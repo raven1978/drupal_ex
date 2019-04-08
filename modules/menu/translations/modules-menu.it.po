@@ -1,0 +1,401 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from files:
+#  menu.admin.inc,v 1.26.2.4 2009/02/25 13:15:40 goba
+#  menu.module,v 1.157.2.6 2009/04/27 12:50:13 goba
+#  menu.install,v 1.9.2.1 2009/01/06 15:46:37 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2009-08-17 10:38+0200\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/menu/menu.admin.inc:104
+msgid "reset"
+msgstr "ripristina"
+
+#: modules/menu/menu.module:28
+msgid ""
+"Enter the name for your new menu. Remember to enable the newly created block "
+"in the <a href=\"@blocks\">blocks administration page</a>."
+msgstr ""
+"Inserisci il nome per il tuo nuovo menu. Ricordati di abilitare il blocco "
+"appena creato nella <a href=\"@blocks\">pagina amministrazione blocchi</a>."
+
+#: modules/menu/menu.module:48
+msgid "Menus"
+msgstr "Menù"
+
+#: modules/menu/menu.module:49
+msgid ""
+"Control your site's navigation menu, primary links and secondary links. as "
+"well as rename and reorganize menu items."
+msgstr ""
+"Controlla il menu di navigazione del tuo sito, i links primari e secondari, "
+"così come la rinominazione e la riorganizzazione degli oggetti del menu."
+
+#: modules/menu/menu.module:120
+msgid "Edit menu item"
+msgstr "Modifica voce menù"
+
+#: modules/menu/menu.module:128
+msgid "Reset menu item"
+msgstr "Reimposta voce menù"
+
+#: modules/menu/menu.module:136
+msgid "Delete menu item"
+msgstr "Cancella voce menù"
+
+#: modules/menu/menu.module:63
+msgid "Add menu"
+msgstr "Aggiungi menù"
+
+#: modules/menu/menu.module:104
+msgid "Edit menu"
+msgstr "Modifica menù"
+
+#: modules/menu/menu.module:112
+msgid "Delete menu"
+msgstr "Cancella menù"
+
+#: modules/menu/menu.admin.inc:289
+msgid "The description displayed when hovering over a menu item."
+msgstr "Descrizione visualizzata passando sopra una voce del menu."
+
+#: modules/menu/menu.admin.inc:616
+msgid "No primary links"
+msgstr "Non ci sono link primari"
+
+#: modules/menu/menu.admin.inc:626
+msgid "No secondary links"
+msgstr "Non ci sono link secondari"
+
+#: modules/menu/menu.admin.inc:260
+msgid ""
+"The path this menu item links to. This can be an internal Drupal path such "
+"as %add-node or an external URL such as %drupal. Enter %front to link to the "
+"front page."
+msgstr ""
+"Il percorso a cui punta la voce del menu. Può essere un percorso interno di "
+"Drupal come %add-node o un URL esterno come %drupal. Inserisci %front per "
+"ottenere un link alla pagina principale."
+
+#: modules/menu/menu.admin.inc:299,177
+msgid "Expanded"
+msgstr "Espanso"
+
+#: modules/menu/menu.admin.inc:301
+msgid ""
+"If selected and this menu item has children, the menu will always appear "
+"expanded."
+msgstr ""
+"Se selezionato e questa voce del menu ha dei figli, i menu appariranno "
+"sempre espansi."
+
+#: modules/menu/menu.admin.inc:564
+msgid "Are you sure you want to delete the custom menu item %item?"
+msgstr "Sei sicuro di voler eliminare la voce del menu personalizzata %item?"
+
+#: modules/menu/menu.admin.inc:574
+msgid "The menu item %title has been deleted."
+msgstr "La voce del menu %title è stata cancellata."
+
+#: modules/menu/menu.admin.inc:575
+msgid "Deleted menu item %title."
+msgstr "Cancellata voce del menu %title."
+
+#: modules/menu/menu.admin.inc:584
+msgid "Are you sure you want to reset the item %item to its default values?"
+msgstr ""
+"Sei sicuro di voler ripristinare la voce %item ai suoi valori predefiniti?"
+
+#: modules/menu/menu.admin.inc:584
+msgid "Any customizations will be lost. This action cannot be undone."
+msgstr ""
+"Qualsiasi personalizzazione sarà perduta. Questa azione non può essere "
+"annullata."
+
+#: modules/menu/menu.admin.inc:593
+msgid "The menu item was reset to its default settings."
+msgstr "La voce di menu è stata riportata ai valori predefiniti."
+
+#: modules/menu/menu.admin.inc:175
+msgid "Menu item"
+msgstr "Voce del menu"
+
+#: modules/menu/menu.module:96
+msgid "Add item"
+msgstr "Aggiungi voce"
+
+#: modules/menu/menu.module:40
+msgid "administer menu"
+msgstr "amministra i menu"
+
+#: modules/menu/menu.admin.inc:54
+msgid "There are no menu items yet."
+msgstr "Non ci sono ancora voci di menu."
+
+#: modules/menu/menu.admin.inc:281
+msgid ""
+"The link text corresponding to this item that should appear in the menu."
+msgstr ""
+"Testo del link corrispondente a questo elemento che dovrebbe apparire nel "
+"menu."
+
+#: modules/menu/menu.admin.inc:295
+msgid "Menu items that are not enabled will not be listed in any menu."
+msgstr ""
+"Gli elementi del menu che non sono abilitati non verranno elencati in alcun "
+"menu."
+
+#: modules/menu/menu.admin.inc:403
+msgid "Menu name"
+msgstr "Nome del menu"
+
+#: modules/menu/menu.admin.inc:405
+msgid ""
+"The machine-readable name of this menu. This text will be used for "
+"constructing the URL of the <em>menu overview</em> page for this menu. This "
+"name must contain only lowercase letters, numbers, and hyphens, and must be "
+"unique."
+msgstr ""
+"Il nome visibile di questo menù. Questo testo verrà utilizzato per la "
+"costruzione dell'URL della pagina di <em>anteprima menù</em> questo menù. "
+"Questo nome deve contenere soltanto lettere minuscole, numeri, trattini e "
+"deve essere univoco."
+
+#: modules/menu/menu.admin.inc:460
+msgid "Are you sure you want to delete the custom menu %title?"
+msgstr "Si desidera eliminare il menu personalizzato %title?"
+
+#: modules/menu/menu.admin.inc:492
+msgid "The custom menu %title has been deleted."
+msgstr "Il menu personalizzato %title è stato eliminato."
+
+#: modules/menu/menu.admin.inc:502
+msgid ""
+"The menu name may only consist of lowercase letters, numbers, and hyphens."
+msgstr ""
+"Il nome del menu può contenere solamente lettere minuscole, numeri e "
+"trattini."
+
+#: modules/menu/menu.admin.inc:512
+msgid "The menu already exists."
+msgstr "Questo menu esiste già."
+
+#: modules/menu/menu.admin.inc:603
+msgid ""
+"The menu module allows on-the-fly creation of menu links in the content "
+"authoring forms. The following option sets the default menu in which a new "
+"link will be added."
+msgstr ""
+"Il modulo 'Menu' permette la creazione dei link nei menu direttamente nel "
+"form di creazione dei contenuti. Questa opzione imposta il menu predefinito "
+"nel quale sarà aggiunto il link."
+
+#: modules/menu/menu.admin.inc:609
+msgid "Default menu for content"
+msgstr "Menu predefinito per il contenuto"
+
+#: modules/menu/menu.admin.inc:612
+msgid ""
+"Choose the menu to be the default in the menu options in the content "
+"authoring form."
+msgstr ""
+"Scegliete il menù che diventerà il predefinito tra le scelte possibili nel "
+"form di stesura contenuti."
+
+#: modules/menu/menu.admin.inc:629
+msgid "Source for the secondary links"
+msgstr "Fonte per i link secondari"
+
+#: modules/menu/menu.admin.inc:493
+msgid "Deleted custom menu %title and all its menu items."
+msgstr "Rimosso il menu personalizzato %title e tutti suoi elementi."
+
+#: modules/menu/menu.admin.inc:457
+msgid ""
+"<strong>Warning:</strong> There is currently 1 menu item in %title. It will "
+"be deleted (system-defined items will be reset)."
+msgid_plural ""
+"<strong>Warning:</strong> There are currently @count menu items in %title. "
+"They will be deleted (system-defined items will be reset)."
+msgstr[0] ""
+"<strong>Attenzione:</strong> Attualmente c'è 1 voce di menu all'interno di %"
+"title. Sarà eliminato (gli elementi globali saranno azzerati)."
+msgstr[1] ""
+"<strong>Attenzione:</strong> Attualmente ci sono @count voci di menu "
+"all'interno di %title. Saranno eliminati  (gli elementi globali saranno "
+"azzerati)."
+
+#: modules/menu/menu.admin.inc:505
+msgid "The menu name can't be longer than 1 character."
+msgid_plural "The menu name can't be longer than @count characters."
+msgstr[0] "Il nome del menu non può essere più lungo di 1 carattere."
+msgstr[1] "Il nome del menu non può essere più lungo di @count caratteri."
+
+#: modules/menu/menu.module:21
+msgid ""
+"The menu module provides an interface to control and customize Drupal's "
+"powerful menu system. Menus are a hierarchical collection of links, or menu "
+"items, used to navigate a website, and are positioned and displayed using "
+"Drupal's flexible block system. By default, three menus are created during "
+"installation: <em>Navigation</em>, <em>Primary links</em>, and <em>Secondary "
+"links</em>. The <em>Navigation</em> menu contains most links necessary for "
+"working with and navigating your site, and is often displayed in either the "
+"left or right sidebar. Most Drupal themes also provide support for "
+"<em>Primary links</em> and <em>Secondary links</em>, by displaying them in "
+"either the header or footer of each page. By default, <em>Primary links</em> "
+"and <em>Secondary links</em> contain no menu items but may be configured to "
+"contain custom menu items specific to your site."
+msgstr ""
+"Il modulo menu fornisce un interfaccia per controllare e personalizzare il "
+"sistema dei menu di Drupal. I menu sono una collezione gerarchica di "
+"collegamenti o elementi, usati per la navigazione all'interno del sito, e "
+"sono posizionati e visualizzati utilizzando il flessibile sistema a blocchi "
+"di Drupal. All'inizio sono creati tre menu durante l'installazione: "
+"<em>Navigazione</em>, <em>Link Principali</em>, e <em>Link Secondari</em>. "
+"Il menu di <em>Navigazione</em> contiene maggior parte dei link necessari "
+"per lavorare e navigare all'interno del sito, ed è spesso visualizzato "
+"all'interno della barra sinistra o destra. Maggior parte dei temi di Drupal "
+"fornisce il supporto per <em>Link Principali</em> e <em>Link Secondari</em>, "
+"visualizzandoli nell'intestazione o in fondo di ciascuna pagina. All'inizio "
+"i <em>Link Principali</em> e <em>Link Secondari</em> non contengono nessun "
+"menu, ma possono essere configurati per contenere dei menu personalizzati "
+"specifici al sito."
+
+#: modules/menu/menu.module:22
+msgid ""
+"The <a href=\"@menu\">menus page</a> displays all menus currently available "
+"on your site. Select a menu from this list to add or edit a menu item, or to "
+"rearrange items within the menu. Create new menus using the <a href=\"@add-"
+"menu\">add menu page</a> (the block containing a new menu must also be "
+"enabled on the <a href=\"@blocks\">blocks administration page</a>)."
+msgstr ""
+"La <a href=\"@menu\">pagina dei menu</a> visualizza tutti menu attualmente "
+"disponibili per il sito. Selezionare un menu da questa lista per aggiungere "
+"o modificare un elemento del menu, oppure per redistribuire gli elementi "
+"all'interno del menu. Creare nuovi menu utilizzando pagina<a href=\"@add-menu"
+"\">aggiungi menu</a> (il blocco contenente il nuovo menu dovrà essere "
+"abilitato anch'esso nella pagina di <a href=\"@blocks\">configurazione dei "
+"blocchi.</a>)."
+
+#: modules/menu/menu.module:23
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@menu"
+"\">Menu module</a>."
+msgstr ""
+"Per maggiori informazioni consulta il manuale on-line per il <a href=\"@menu"
+"\">modulo 'Menu'</a>."
+
+#: modules/menu/menu.module:26
+msgid ""
+"Menus are a collection of links (menu items) used to navigate a website. The "
+"menus currently available on your site are displayed below. Select a menu "
+"from this list to manage its menu items."
+msgstr ""
+"I menu sono una raccolta di links (elementi del menu) utilizzati per "
+"navigare un sito web. I menu attualmente disponibili per questo sito sono "
+"mostrati qui sotto. Seleziona un menu da questa lista per gestirne i suoi "
+"elementi."
+
+#: modules/menu/menu.module:30
+msgid ""
+"To rearrange menu items, grab a drag-and-drop handle under the <em>Menu "
+"item</em> column and drag the items (or group of items) to a new location in "
+"the list. (Grab a handle by clicking and holding the mouse while hovering "
+"over a handle icon.) Remember that your changes will not be saved until you "
+"click the <em>Save configuration</em> button at the bottom of the page."
+msgstr ""
+"Per ordinare le voci del menu usare la maniglia drag-and-drop nella colonna "
+"<em>Voce del menu</em> e trascinare le voci (o gruppi di voci) in una nuova "
+"posizione nell'elenco. (Per afferrare una maniglia, fare clic e tenere "
+"premuto il mouse mentre si sta passando con il puntatore sopra l'icona.) "
+"Ricorda che i cambiamenti non saranno salvati finché non fai clic sul "
+"bottone <em>Salva configurazione</em> in fondo alla pagina."
+
+#: modules/menu/menu.module:32
+msgid "Enter the title and path for your new menu item."
+msgstr "Inserisci il titolo e il percorso per il nuovo elemento del menu."
+
+#: modules/menu/menu.module:381
+msgid "Delete this menu item."
+msgstr "Elimina questo elemento del menu."
+
+#: modules/menu/menu.module:396
+msgid ""
+"The link text corresponding to this item that should appear in the menu. "
+"Leave blank if you do not wish to add this post to the menu."
+msgstr ""
+"Il testo del link corrispondente a questa voce che dovrebbe apparire nel "
+"menu. Lascia vuoto se non desideri aggiungere questo contenuto al menu."
+
+#: modules/menu/menu.module:57
+msgid "List menus"
+msgstr "Elenca menu"
+
+#: modules/menu/menu.module:80
+msgid "Customize menu"
+msgstr "Personalizza menu"
+
+#: modules/menu/menu.module:90
+msgid "List items"
+msgstr "Elenca elementi"
+
+#: modules/menu/menu.install:12
+msgid ""
+"The navigation menu is provided by Drupal and is the main interactive menu "
+"for any site. It is usually the only menu that contains personalized links "
+"for authenticated users, and is often not even visible to anonymous users."
+msgstr ""
+"Il menu di navigazione è fornito da Drupal ed è il principale menu "
+"interattivo per qualsiasi sito. Di solito è l'unico menu che contiene i link "
+"personalizzati per utenti autenticati, e spesso non è ancora visibile per "
+"gli utenti anonimi."
+
+#: modules/menu/menu.install:13
+msgid ""
+"Primary links are often used at the theme layer to show the major sections "
+"of a site. A typical representation for primary links would be tabs along "
+"the top."
+msgstr ""
+"I links primari sono spesso usati nei temi per accedere alle principali "
+"sezioni del sito. Una uso tipico dei links primari potrebbero essere le "
+"linguette poste in alto nel sito."
+
+#: modules/menu/menu.install:14
+msgid ""
+"Secondary links are often used for pages like legal notices, contact "
+"details, and other secondary navigation items that play a lesser role than "
+"primary links"
+msgstr ""
+"I link secondari sono spesso utilizzati per pagine quali avvisi legali, "
+"dettagli sui contatti ed altre voci di navigazione che hanno un ruolo meno "
+"importante rispetto ai link primari."
+
+#: modules/menu/menu.admin.inc:619
+msgid "Source for the primary links"
+msgstr "Sorgente dei links primari"
+
+#: modules/menu/menu.admin.inc:623
+msgid "Select what should be displayed as the primary links."
+msgstr ""
+"Selezionare quello che dovrebbe essere visualizzato come link primario."
+
+#: modules/menu/menu.admin.inc:633
+msgid ""
+"Select what should be displayed as the secondary links. You can choose the "
+"same menu for secondary links as for primary links (currently %primary). If "
+"you do this, the children of the active primary menu link will be displayed "
+"as secondary links."
+msgstr ""
+"Selezione cosa dovrebbe essere visualizzato nei link secondari. Puoi "
+"scegliere lo stesso menù sia per i link secondari che per i link primari "
+"(attualmente %primary). Se fai questo, il figlio del menù primario attivo "
+"verrà visualizzato come link secondario."

@@ -1,0 +1,82 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from files:
+#  tracker.module,v 1.154.2.1 2008/04/09 21:11:51 goba
+#  tracker.pages.inc,v 1.5 2007/11/28 10:29:20 dries
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2009-08-08 00:49+0200\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/tracker/tracker.module:27
+msgid "Recent posts"
+msgstr "Contenuti recenti"
+
+#: modules/tracker/tracker.module:34
+msgid "All recent posts"
+msgstr "Tutti i contenuti recenti"
+
+#: modules/tracker/tracker.module:38
+msgid "My recent posts"
+msgstr "I miei contenuti recenti"
+
+#: modules/tracker/tracker.module:55
+msgid "Track posts"
+msgstr "Traccia i contenuti"
+
+#: modules/tracker/tracker.pages.inc:57
+msgid "!time ago"
+msgstr "!time fa"
+
+#: modules/tracker/tracker.pages.inc:65
+msgid "Post"
+msgstr "Contenuto"
+
+#: modules/tracker/tracker.pages.inc:65
+msgid "Last updated"
+msgstr "Ultimo aggiornamento"
+
+#: modules/tracker/tracker.module:15
+msgid ""
+"The tracker module displays the most recently added or updated content on "
+"your site, and provides user-level tracking to follow the contributions of "
+"particular authors."
+msgstr ""
+"Il modulo tracker visualizza i contenuti aggiunti o aggiornati più "
+"recentemente nel tuo sito, e fornisce un sistema di 'tracking' a livello "
+"utente per seguire le collaborazione di particolari autori."
+
+#: modules/tracker/tracker.module:16
+msgid ""
+"The <em>Recent posts</em> page is available via a link in the navigation "
+"menu block and displays new and recently-updated content (including the "
+"content type, the title, the author's name, number of comments, and time of "
+"last update) in reverse chronological order. Posts are marked updated when "
+"changes occur in the text, or when new comments are added. To use the "
+"tracker module to follow a specific user's contributions, select the "
+"<em>Track</em> tab from the user's profile page."
+msgstr ""
+"La pagina dei <em>Contenuti recenti</em> è disponibile tramite un "
+"collegamento nel blocco del menu di navigazione e visualizza i contenuti "
+"recentemente aggiornati (compreso il tipo di contenuto, il titolo, il nome "
+"dell'autore, il numero di commenti e il tempo dell'ultimo aggiornamento) in "
+"un ordine inversamente cronologico. I contenuti vengono contrassegnati come "
+"aggiornati quando si attuano delle modifiche nel testo oppure quando vengono "
+"aggiunti dei nuovi commenti. Per utilizzare il modulo tracker che permette "
+"di seguire i contributi di un utente specifico, selezionare la scheda "
+"<em>Traccia</em> dalla pagina del profilo dell'utente.</em>"
+
+#: modules/tracker/tracker.module:17
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@tracker"
+"\">Tracker module</a>."
+msgstr ""
+"Per maggiori informazioni consulta il manuale on-line per il <a href="
+"\"@tracker\">modulo 'tracker'</a>."

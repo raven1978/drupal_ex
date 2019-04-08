@@ -1,0 +1,20 @@
+ZERO POINT responsive theme for Drupal 6
+
+0 Point 6.x-4.2 (Sep 6, 2015)
+------------------------------
+    o Minor bugs were addressed
+
+0 Point 6.x-4.1 (Aug 28, 2015)
+------------------------------
+    o #2536752: Round user pictures; CSS was moved to _custom-style.css
+    o Improved header image rotator
+    o #2513662: The buggy behavior of the menu system in multilingual environment was corrected
+    o EU Cookie Compliance module is responsive in Drupal 6
+    o Dropdown CSS for mobile devices optimization
+    o Minor bugs were addressed
+
+0 Point 6.x-4.x (Jun 27, 2015)
+-------------------------
+    o Fully responsive Zero Point branch for Drupal 6 using Yahoo Pure.css Framework
+    o A complete theme redesign made with mobile in mind: compatible, light and fast.
+

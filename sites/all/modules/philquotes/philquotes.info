@@ -1,0 +1,5 @@
+; $Id$
+name = "Philosophy Quotes"
+description = "Dynamic display of philosophy quotes."
+core = 6.x
+php = 5.1

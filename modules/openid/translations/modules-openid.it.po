@@ -1,0 +1,217 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from files:
+#  openid.inc,v 1.8 2008/01/30 22:11:22 goba
+#  openid.pages.inc,v 1.5.2.1 2008/07/09 21:48:28 goba
+#  openid.module,v 1.19.2.6 2009/06/10 14:05:23 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2009-08-17 10:06+0200\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/openid/openid.inc:67
+msgid "Send"
+msgstr "Invia"
+
+#: modules/openid/openid.inc:44
+msgid "OpenID redirect"
+msgstr "Reindirizzamento OpenID"
+
+#: modules/openid/openid.pages.inc:18
+msgid "OpenID login failed."
+msgstr "Accesso con OpenID non riuscito."
+
+#: modules/openid/openid.pages.inc:21
+msgid "OpenID login cancelled."
+msgstr "Accesso con OpenID annullato."
+
+#: modules/openid/openid.pages.inc:39
+msgid "Successfully added %identity"
+msgstr "%identity aggiunta con successo"
+
+#: modules/openid/openid.pages.inc:66
+msgid "Add an OpenID"
+msgstr "Aggiungi un OpenID"
+
+#: modules/openid/openid.pages.inc:74
+msgid "That OpenID is already in use on this site."
+msgstr "Questo OpenID è già in uso su questo sito."
+
+#: modules/openid/openid.pages.inc:109
+msgid "OpenID deleted."
+msgstr "OpenID eliminato."
+
+#: modules/openid/openid.module:47
+msgid ""
+"This site supports <a href=\"@openid-net\">OpenID</a>, a secure way to log "
+"into many websites using a single username and password. OpenID can reduce "
+"the necessity of managing many usernames and passwords for many websites."
+msgstr ""
+"Questo sito supporta <a href=\"@openid-net\">OpenID</a>, un metodo sicuro "
+"per autenticarsi in più siti internet utilizzando un solo username e "
+"password. OpenID può ridurre la necessità di amministrare più nomi utente e "
+"password per molti siti web."
+
+#: modules/openid/openid.module:48
+msgid ""
+"To use OpenID you must first establish an identity on a public or private "
+"OpenID server. If you do not have an OpenID and would like one, look into "
+"one of the <a href=\"@openid-providers\">free public providers</a>. You can "
+"find out more about OpenID at <a href=\"@openid-net\">this website</a>."
+msgstr ""
+"Per usare OpenID è necessario innanzitutto stabilire un'identità su un "
+"server OpenID pubblico o privato. Se non si è in possesso di un OpenID e se "
+"ne desidera uno, è possibile visitare uno dei <a href=\"@openid-providers"
+"\">fornitori pubblici gratuiti</a>. Ulteriori informazioni su OpenID sono "
+"reperibili in <a href=\"@openid-net\">questo sito</a>."
+
+#: modules/openid/openid.module:49
+msgid ""
+"If you already have an OpenID, enter the URL to your OpenID server below (e."
+"g. myusername.openidprovider.com). Next time you login, you will be able to "
+"use this URL instead of a regular username and password. You can have "
+"multiple OpenID servers if you like; just keep adding them here."
+msgstr ""
+"Se si è già in possesso di un OpenID, immettere l'URL del server OpenID in "
+"uso qui sotto (es. myusername.openidprovider.com). La prossima volta che si "
+"effettuerà l'accesso si potrà utilizzare questo URL al posto del normale "
+"nome utente e password. Se necessario è possibile avere molteplici server "
+"OpenID, è sufficiente continuare ad aggiungerli qui."
+
+#: modules/openid/openid.module:53
+msgid ""
+"OpenID is a secure method for logging into many websites with a single "
+"username and password. It does not require special software, and it does not "
+"share passwords with any site to which it is associated; including your site."
+msgstr ""
+"OpenID è un sistema sicuro per accedere a molteplici siti con un unico nome "
+"utente e password. Non richiede software particolari e non condivide le "
+"password con i siti associati, incluso questo."
+
+#: modules/openid/openid.module:54
+msgid ""
+"Users can create accounts using their OpenID, assign one or more OpenIDs to "
+"an existing account, and log in using an OpenID. This lowers the barrier to "
+"registration, which is good for the site, and offers convenience and "
+"security to the users. OpenID is not a trust system, so email verification "
+"is still necessary. The benefit stems from the fact that users can have a "
+"single password that they can use on many websites. This means they can "
+"easily update their single password from a centralized location, rather than "
+"having to change dozens of passwords individually."
+msgstr ""
+"Gli utenti possono creare profili usando il proprio OpenID, assegnare uno o "
+"più OpenID ad un profilo esistente e accedervi usando un OpenID. Ciò abbatte "
+"le barriere della registrazione, il che è positivo per il tuo sito e offre "
+"convenienza e sicurezza per gli utenti. OpenID non offre garanzia di "
+"fiducia, pertanto la verifica tramite e-mail resta necessaria. I benefici "
+"emergono dal fatto che gli utenti possono usare un'unica password per più "
+"siti, così facendo possono facilmente modificare la loro unica password da "
+"un server centrale, senza doverle cambiare singolarmente a dozzine da tutti "
+"i siti."
+
+#: modules/openid/openid.module:55
+msgid ""
+"The basic concept is as follows: A user has an account on an OpenID server. "
+"This account provides them with a unique URL (such as myusername."
+"openidprovider.com). When the user comes to your site, they are presented "
+"with the option of entering this URL. Your site then communicates with the "
+"OpenID server, asking it to verify the identity of the user. If the user is "
+"logged into their OpenID server, the server communicates back to your site, "
+"verifying the user. If they are not logged in, the OpenID server will ask "
+"the user for their password. At no point does your site record, or need to "
+"record the user's password."
+msgstr ""
+"Il funzionamento di base è il seguente: L'utente ha un account presso un "
+"server OpenID. Questo account gli fornisce un indirizzo URL univoco (per es. "
+"myusername.openidprovider.com). Quando l'utente arriva al vostro sito, gli "
+"viene fornita la possibilità di inserire il suo URL. A questo punto il sito "
+"comunica con il server OpenID con la richiesta di verifica dell'identità "
+"dell'utente. Se l'utente è connesso presso il suo server OpenID, il server "
+"risponde in maniera positiva verificando così la sua identità. Nel caso "
+"contrario, il server OpenID chiederà all'utente di inserire la sua password. "
+"In nessuno dei passaggi precedenti il vostro sito registra o ha bisogno di "
+"registrare le credenziali dell'utente."
+
+#: modules/openid/openid.module:56
+msgid ""
+"More information on OpenID is available at <a href=\"@openid-net\">OpenID."
+"net</a>."
+msgstr ""
+"Ulteriori informazioni su OpenID sono disponibili visitando <a href="
+"\"@openid-net\">OpenID.net</a>."
+
+#: modules/openid/openid.module:57
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@handbook"
+"\">OpenID module</a>."
+msgstr ""
+"Per maggiori informazioni consulta il manuale on-line per il <a href="
+"\"@handbook\">modulo 'OpenID'</a>."
+
+#: modules/openid/openid.module:69
+msgid "Once you have verified your email address, you may log in via OpenID."
+msgstr ""
+"Una volta verificato l'indirizzo e-mail sarà possibile accedere tramite "
+"OpenID."
+
+#: modules/openid/openid.module:108,91
+msgid "Log in using OpenID"
+msgstr "Accedi usando OpenID"
+
+#: modules/openid/openid.module:95
+msgid "Cancel OpenID login"
+msgstr "Annulla il login OpenID"
+
+#: modules/openid/openid.module:112
+msgid "What is OpenID?"
+msgstr "Cos'è OpenID?"
+
+#: modules/openid/openid.module:161
+msgid ""
+"Sorry, that is not a valid OpenID. Please ensure you have spelled your ID "
+"correctly."
+msgstr ""
+"Spiacente, questo non è un OpenID valido. Verifica che l'ID sia scritto "
+"correttamente."
+
+#: modules/openid/openid.module:391
+msgid ""
+"You must validate your email address for this account before logging in via "
+"OpenID"
+msgstr ""
+"E' necessario verificare l'indirizzo e-mail per questo profilo prima di "
+"accedere tramite OpenID"
+
+#: modules/openid/openid.module:409
+msgid ""
+"OpenID registration failed for the reasons listed. You may register now, or "
+"if you already have an account you can <a href=\"@login\">log in</a> now and "
+"add your OpenID under \"My Account\""
+msgstr ""
+"La registrazione con OpenID è fallita per le ragioni elencate. E' possibile "
+"registrarsi ora oppure effettuare l'<a href=\"@login\">accesso</a> se si è "
+"già in possesso di un profilo e aggiungere l'OpenID posseduto nella sezione "
+"\"Il mio profilo\""
+
+#: modules/openid/openid.module:14
+msgid "OpenID Login"
+msgstr "Accesso con OpenID"
+
+#: modules/openid/openid.module:21
+msgid "OpenID identities"
+msgstr "Identità OpenID"
+
+#: modules/openid/openid.module:30
+msgid "Delete OpenID"
+msgstr "Elimina OpenID"
+
+#: modules/openid/openid.pages.inc:103
+msgid "Are you sure you want to delete the OpenID %authname for %user?"
+msgstr "Sei sicuro di voler cancellare l'OpenID %authname per %user?"

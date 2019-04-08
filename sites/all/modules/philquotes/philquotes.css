@@ -1,0 +1,11 @@
+#philquotes-text:first-letter {
+font-size: 18pt;
+font-weight: bold;
+color: pink;
+}
+
+#philquotes-origin {
+font-style: oblique;
+text-align: right;
+margin-right: 5px;
+}

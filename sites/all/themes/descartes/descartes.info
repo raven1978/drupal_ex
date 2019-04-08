@@ -1,0 +1,8 @@
+; $Id$
+name = Descartes
+description = Table-based multi-column theme with a Cartesian flavor.
+version = 1.0
+core = 6.x
+base theme = bluemarine
+stylesheets[all][] = descartes-style.css
+stylesheets[all][] = new.css

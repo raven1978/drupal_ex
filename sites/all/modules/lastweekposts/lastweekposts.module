@@ -1,0 +1,75 @@
+<?php
+
+function lastweekposts_help($section = '') {
+    $output = '';
+    switch ($section) {
+        case "admin/modules#description":
+            $output = t("Displays links to nodes created on the last week");
+            break;
+        case "admin/build/modules":
+            $output = t("ECCOLO AR CUBBO!");
+            break;
+    }
+    return $output;
+}
+
+function lastweekposts_menu() {
+    $items = array();
+    $items[] = array('path' => 'lastweekposts',
+        'title' => t('last week posts'),
+        'callback' => '_lastweekposts_all',
+        'access' => user_access('access content'),
+        'type' => MENU_CALLBACK);
+    return $items;
+}
+
+function lastweekposts_block($op = 'list', $delta = 0) {
+// listing of blocks, such as on the admin/block page
+    if ($op == "list") {
+        $blocks[0]["info"] = t('Last Week Posts');
+        return $blocks;
+    } else if ($op == "view" && user_access('access lastweekposts')) {
+        switch ($delta) {
+            case 0:
+                $block['subject'] = 'Last Week Posts';
+                $block['content'] = _lastweekposts_block_content();
+//                $block['content'] = "CIAO SONO UN CONTENUTO FARLOCCO!";
+                break;
+        }
+        return $block;
+    }
+}
+
+function _lastweekposts_block_content() {
+    $block_content = '';
+// Get today's date
+    $today = getdate();
+// calculate midnight one week ago
+    $start_time = mktime(0, 0, 0, $today['mon'], ($today['mday'] - 7), $today['year']);
+// we want items that occur only during the last week, so calculate 7 days
+    $end_time = $start_time + 604800;
+// 60 * 60 * 24 * 7= 604800 seconds in a week
+    $query = "SELECT nid, title, type, created FROM " . "{node} WHERE created >= '" . $start_time
+            . "' AND created <= '" . $end_time . "'";
+// get the links
+    $queryResult = db_query($query);
+    while ($links = db_fetch_object($queryResult)) {
+        $block_content .= l($links->title, 'node/' . $links->nid) . '</a> (' . $links->type . ')<br>';
+    }
+// check to see if there was any content before setting up the block
+    if ($block_content == '') {
+// no content from a week ago, return nothing.
+        return;
+    } else {
+        return $block_content;
+    }
+}
+
+function lastweekposts_settings() {
+// only administrators can access this module
+    if (!user_access("admin lastweekposts")) {
+        return message_access();
+    }
+    $output .= form_textfield(t("Maximum number of links"), " lastweekposts_maxdisp", variable_get("lastweekposts_maxdisp", "5"), 2, 2, t("The maximum number of links to display in the block."));
+    return $output;
+}

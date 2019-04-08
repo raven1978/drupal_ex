@@ -1,0 +1,5 @@
+name = My Module
+core = 6.x
+description = Simple Helloworld page
+
+dependencies[]= blog

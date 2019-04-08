@@ -1,0 +1,510 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from files:
+#  update.fetch.inc,v 1.7.2.6 2009/06/09 11:08:32 goba
+#  update.report.inc,v 1.10.2.4 2009/06/09 11:08:32 goba
+#  update.compare.inc,v 1.8.2.5 2009/06/09 11:08:32 goba
+#  update.module,v 1.17.2.5 2009/06/09 11:08:32 goba
+#  update.settings.inc,v 1.3.2.1 2009/04/29 17:17:21 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2009-08-13 11:19+0200\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/update/update.fetch.inc:82,85
+msgid "update"
+msgstr "aggiorna"
+
+#: modules/update/update.report.inc:231
+msgid "Download"
+msgstr "Scarica"
+
+#: modules/update/update.compare.inc:166
+msgid "Unknown"
+msgstr "Sconosciuto"
+
+#: modules/update/update.report.inc:235
+msgid "Release notes"
+msgstr "Note di rilascio"
+
+#: modules/update/update.module:129
+msgid "Available updates"
+msgstr "Aggiornamenti disponibili"
+
+#: modules/update/update.module:152
+msgid "Manual update check"
+msgstr "Controllo manuale degli aggiornamenti"
+
+#: modules/update/update.settings.inc:18
+msgid "E-mail addresses to notify when updates are available"
+msgstr "Indirizzi e-mail ai quali notificare la disponibilità di aggiornamenti"
+
+#: modules/update/update.settings.inc:26
+msgid "Check for updates"
+msgstr "Verifica la disponibilità di aggiornamenti"
+
+#: modules/update/update.settings.inc:29
+msgid "Daily"
+msgstr "Ogni giorno"
+
+#: modules/update/update.settings.inc:30
+msgid "Weekly"
+msgstr "Ogni settimana"
+
+#: modules/update/update.settings.inc:40
+msgid "All newer versions"
+msgstr "Tutte le versioni più recenti"
+
+#: modules/update/update.settings.inc:41
+msgid "Only security updates"
+msgstr "Solo aggiornamenti di sicurezza"
+
+#: modules/update/update.settings.inc:80
+msgid "%email is not a valid e-mail address."
+msgstr "%email non è un indirizzo di posta elettronica valido."
+
+#: modules/update/update.settings.inc:83
+msgid "%emails are not valid e-mail addresses."
+msgstr "%emails non sono indirizzi di posta elettronica validi."
+
+#: modules/update/update.module:220,252
+msgid "Drupal core update status"
+msgstr "Stato di aggiornamento del core di Drupal"
+
+#: modules/update/update.module:265
+msgid "Not secure!"
+msgstr "Non sicuro!"
+
+#: modules/update/update.module:221
+msgid "No update data available"
+msgstr "Non sono disponibili informazioni sugli aggiornamenti"
+
+#: modules/update/update.module:412
+msgid "See the available updates page for more information:"
+msgstr ""
+"Controlla la pagina degli aggiornamenti disponibili per ulteriori "
+"informazioni:"
+
+#: modules/update/update.module:408
+msgid "New release(s) available for !site_name"
+msgstr "Nuova/e release disponibile/i per !site_name"
+
+#: modules/update/update.module:468
+msgid ""
+"There are updates available for your version of Drupal. To ensure the proper "
+"functioning of your site, you should update as soon as possible."
+msgstr ""
+"Sono disponibili degli aggiornamenti per questa versione di Drupal. Per "
+"assicurare il corretto funzionamento del sito, è consigliabile eseguire "
+"l'aggiornamento non appena possibile."
+
+#: modules/update/update.module:441
+msgid ""
+"There is a security update available for your version of Drupal. To ensure "
+"the security of your server, you should update immediately!"
+msgstr ""
+"È disponibile un aggiornamento di sicurezza per la tua versione di Drupal. "
+"Per garantire la sicurezza del tuo server, dovresti aggiornare "
+"immediatamente!"
+
+#: modules/update/update.module:488
+msgid ""
+"See the <a href=\"@available_updates\">available updates</a> page for more "
+"information."
+msgstr ""
+"Controlla la pagina <a href=\"@available_updates\">aggiornamenti "
+"disponibili</a> per maggiori informazioni."
+
+#: modules/update/update.compare.inc:374,523,572
+msgid "No available releases found"
+msgstr "Non è stata trovata nessuna release disponibile"
+
+#: modules/update/update.compare.inc:567
+msgid "Invalid info"
+msgstr "Informazioni non valide"
+
+#: modules/update/update.report.inc:31
+msgid "Check manually"
+msgstr "Controlla manualmente"
+
+#: modules/update/update.report.inc:72
+msgid "Security update required!"
+msgstr "È richiesto un aggiornamento di sicurezza!"
+
+#: modules/update/update.report.inc:81
+msgid "Update available"
+msgstr "Aggiornamento disponibile"
+
+#: modules/update/update.report.inc:139
+msgid "Recommended version:"
+msgstr "Versione consigliata:"
+
+#: modules/update/update.report.inc:145
+msgid "Security update:"
+msgstr "Aggiornamento di sicurezza:"
+
+#: modules/update/update.report.inc:151
+msgid "Latest version:"
+msgstr "Ultima versione:"
+
+#: modules/update/update.report.inc:157
+msgid "Development version:"
+msgstr "Versione di sviluppo:"
+
+#: modules/update/update.report.inc:163
+msgid "Also available:"
+msgstr "Disponibile anche:"
+
+#: modules/update/update.compare.inc:555
+msgid "Unknown release date"
+msgstr "Data di rilascio sconosciuta"
+
+#: modules/update/update.fetch.inc:17,85
+msgid ""
+"Unable to fetch any information about available new releases and updates."
+msgstr ""
+"Impossibile recuperare informazioni sulla disponibilità di nuove versioni e "
+"aggiornamenti."
+
+#: modules/update/update.report.inc:183
+msgid "Includes: %includes"
+msgstr "Include: %includes"
+
+#: modules/update/update.report.inc:198
+msgid "Drupal core"
+msgstr "Drupal core"
+
+#: modules/update/update.report.inc:201
+msgid "Disabled modules"
+msgstr "Moduli disattivati"
+
+#: modules/update/update.report.inc:202
+msgid "Disabled themes"
+msgstr "Temi disattivati"
+
+#: modules/update/update.settings.inc:21
+msgid ""
+"Whenever your site checks for available updates and finds new releases, it "
+"can notify a list of users via e-mail. Put each address on a separate line. "
+"If blank, no e-mails will be sent."
+msgstr ""
+"Ogni volta che il sito controlla se vi sono aggiornamenti disponibili e "
+"trova delle nuove versioni, può avvisare via e-mail una lista di utenti. "
+"Inserire ogni indirizzo e-mail su una nuova riga. Se rimane vuoto nessuna e-"
+"mail sarà spedita."
+
+#: modules/update/update.settings.inc:32
+msgid ""
+"Select how frequently you want to automatically check for new releases of "
+"your currently installed modules and themes."
+msgstr ""
+"Selezionare la frequenza con la quale eseguire il controllo automatico di "
+"nuove versioni per i  moduli e i temi attualmente installati."
+
+#: modules/update/update.module:70
+msgid ""
+"Here you can find information about available updates for your installed "
+"modules and themes. Note that each module or theme is part of a \"project\", "
+"which may or may not have the same name, and might include multiple modules "
+"or themes within it."
+msgstr ""
+"Qui puoi trovare informazioni sugli aggiornamenti disponibili per i moduli e "
+"i temi attualmente installati. Nota che ogni modulo o tema fa parte di un "
+"«progetto», che può avere il medesimo nome o meno, e può includere diversi "
+"moduli o temi."
+
+#: modules/update/update.module:71
+msgid ""
+"To extend the functionality or to change the look of your site, a number of "
+"contributed <a href=\"@modules\">modules</a> and <a href=\"@themes\">themes</"
+"a> are available."
+msgstr ""
+"Per estendere la funzionalità o cambiare l'aspetto del tuo sito, sono "
+"disponibili altri <a href=\"@modules\">moduli</a> e <a href=\"@themes"
+"\">temi</a>."
+
+#: modules/update/update.module:88
+msgid ""
+"See the <a href=\"@available_updates\">available updates</a> page for "
+"information on installed modules and themes with new versions released."
+msgstr ""
+"Controllare la pagina <a href=\"@available_updates\">aggiornamenti "
+"disponibili</a> per informazioni riguardo al rilascio di nuove versioni dei "
+"moduli e temi installati."
+
+#: modules/update/update.module:96
+msgid ""
+"The Update status module periodically checks for new versions of your site's "
+"software (including contributed modules and themes), and alerts you to "
+"available updates."
+msgstr ""
+"Il modulo 'update status' controlla periodicamente la disponibilità di nuove "
+"versioni del software del tuo sito (inclusi moduli aggiuntivi e temi), e ti "
+"avvisa se sono disponibili aggiornamenti."
+
+#: modules/update/update.module:97
+msgid ""
+"The <a href=\"@update-report\">report of available updates</a> will alert "
+"you when new releases are available for download. You may configure options "
+"for update checking frequency and notifications at the <a href=\"@update-"
+"settings\">Update status module settings page</a>."
+msgstr ""
+"Il  <a href=\"@update-report\">rapporto sugli aggiornamenti disponibili</a> "
+"ti avviserà quando saranno disponibili nuove versioni da scaricare. Puoi "
+"configurare le opzioni per la frequenza del controllo degli aggiornamenti e "
+"la frequenza della notifiche nella <a href=\"@update-settings\">pagina di "
+"amministrazione del modulo 'update status'</a>."
+
+#: modules/update/update.module:98
+msgid ""
+"Please note that in order to provide this information, anonymous usage "
+"statistics are sent to drupal.org. If desired, you may disable the Update "
+"status module from the <a href=\"@modules\">module administration page</a>."
+msgstr ""
+"Nota che per poter fornire questa informazione vengono inviate delle "
+"statistiche di utilizzo anonime a drupal.org. Se lo si desidera, è possibile "
+"disattivare il modulo 'Update status' dalla <a href=\"@modules\">pagina di "
+"amministrazione dei moduli</a>."
+
+#: modules/update/update.module:99
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@update"
+"\">Update status module</a>."
+msgstr ""
+"Per ulteriori informazioni consulta il manuale on-line per il <a href="
+"\"@update\">modulo 'Update status'</a>."
+
+#: modules/update/update.module:255
+msgid "Module and theme update status"
+msgstr "Stato di aggiornamento dei moduli e temi"
+
+#: modules/update/update.module:326
+msgid ""
+"No information is available about potential new releases for currently "
+"installed modules and themes. To check for updates, you may need to <a href="
+"\"@run_cron\">run cron</a> or you can <a href=\"@check_manually\">check "
+"manually</a>. Please note that checking for available updates can take a "
+"long time, so please be patient."
+msgstr ""
+"Nessuna informazione disponibile per potenziali nuovi aggiornamenti dei "
+"moduli o temi installati. Per controllare gli aggiornamenti, puoi aver "
+"bisogno di <a href=\"@run_cron\">eseguire cron</a> o puoi <a href="
+"\"@check_manually\">controllare manualmente</a>. Nota che controllare la "
+"disponibilità di nuovi aggiornamenti può durare a lungo, per favore sii "
+"paziente."
+
+#: modules/update/update.module:471
+msgid ""
+"There are updates available for one or more of your modules or themes. To "
+"ensure the proper functioning of your site, you should update as soon as "
+"possible."
+msgstr ""
+"Sono disponibili degli aggiornamenti per uno o più moduli o temi. Per "
+"assicurare il corretto funzionamento del sito, è consigliabile eseguire "
+"l'aggiornamento non appena possibile."
+
+#: modules/update/update.module:444
+msgid ""
+"There are security updates available for one or more of your modules or "
+"themes. To ensure the security of your server, you should update immediately!"
+msgstr ""
+"Sono disponibili degli aggiornamenti di sicurezza per uno o più moduli o "
+"temi. Per assicurare la sicurezza del server, è consigliabile eseguire "
+"l'aggiornamento immediatamente!"
+
+#: modules/update/update.module:130
+msgid ""
+"Get a status report about available updates for your installed modules and "
+"themes."
+msgstr ""
+"Ottieni un rapporto sugli aggiornamenti disponibili per i moduli e i temi "
+"installati."
+
+#: modules/update/update.compare.inc:279
+msgid "Project not secure"
+msgstr "Progetto non sicuro"
+
+#: modules/update/update.compare.inc:280
+msgid ""
+"This project has been labeled insecure by the Drupal security team, and is "
+"no longer available for download. Immediately disabling everything included "
+"by this project is strongly recommended!"
+msgstr ""
+"Questo progetto è stato etichettato come insicuro dal team di sicurezza "
+"Drupal, non è quindi più disponibile per il download. Si raccomanda di "
+"disattivare immediatamente tutto ciò che è direttamente correlato a questo "
+"progetto!"
+
+#: modules/update/update.compare.inc:291
+msgid "Project revoked"
+msgstr "Progetto ritirato"
+
+#: modules/update/update.compare.inc:292
+msgid ""
+"This project has been revoked, and is no longer available for download. "
+"Disabling everything included by this project is strongly recommended!"
+msgstr ""
+"Questo progetto è stato ritirato, non è quindi più disponibile per il "
+"download. Si raccomanda di disattivare immediatamente tutto ciò che è "
+"direttamente correlato a questo progetto!"
+
+#: modules/update/update.compare.inc:302
+msgid "Project not supported"
+msgstr "Progetto non supportato"
+
+#: modules/update/update.compare.inc:303
+msgid ""
+"This project is no longer supported, and is no longer available for "
+"download. Disabling everything included by this project is strongly "
+"recommended!"
+msgstr ""
+"Questo progetto non è più supportato e non è quindi disponibile per il "
+"download. Si raccomanda di disattivare immediatamente tutto ciò che è "
+"direttamente correlato a questo progetto!"
+
+#: modules/update/update.compare.inc:391
+msgid "Release revoked"
+msgstr "Release ritirata"
+
+#: modules/update/update.compare.inc:392
+msgid ""
+"Your currently installed release has been revoked, and is no longer "
+"available for download. Disabling everything included in this release or "
+"upgrading is strongly recommended!"
+msgstr ""
+"La release attualmente installata è stata ritirata, non è quindi più "
+"disponibile per il download. Si raccomanda di disattivare immediatamente o "
+"di aggiornare tutto ciò che è direttamente correlato a questo progetto!"
+
+#: modules/update/update.compare.inc:403
+msgid "Release not supported"
+msgstr "Release non supportata"
+
+#: modules/update/update.compare.inc:404
+msgid ""
+"Your currently installed release is now unsupported, and is no longer "
+"available for download. Disabling everything included in this release or "
+"upgrading is strongly recommended!"
+msgstr ""
+"La release attualmente installata è ora priva di supporto, non è quindi più "
+"disponibile per il download. Si raccomanda di disattivare immediatamente o "
+"di aggiornare tutto ciò che è direttamente correlato a questo progetto!"
+
+#: modules/update/update.report.inc:30
+msgid "Last checked: @time ago"
+msgstr "Ultimo controllo: @time fa"
+
+#: modules/update/update.report.inc:30
+msgid "Last checked: never"
+msgstr "Ultimo controllo: mai"
+
+#: modules/update/update.report.inc:78
+msgid "Not supported!"
+msgstr "Non supportato!"
+
+#: modules/update/update.module:271
+msgid "Unsupported release"
+msgstr "Release non supportata"
+
+#: modules/update/update.module:280
+msgid "Can not determine status"
+msgstr "Impossibile determinare lo stato"
+
+#: modules/update/update.module:287
+msgid "(version @version available)"
+msgstr "(versione @version disponibile)"
+
+#: modules/update/update.module:450
+msgid ""
+"Your version of Drupal has been revoked and is no longer available for "
+"download. Upgrading is strongly recommended!"
+msgstr ""
+"La tua versione di Drupal non è più supportata e non è più disponibile per "
+"il download. L'aggiornamento è fortemente consigliato!"
+
+#: modules/update/update.module:453
+msgid ""
+"The installed version of at least one of your modules or themes has been "
+"revoked and is no longer available for download. Upgrading or disabling is "
+"strongly recommended!"
+msgstr ""
+"La versione installata di almeno uno dei moduli o dei temi è stata ritirata "
+"e non è più disponibile per il download. L'aggiornamento o la rimozione è "
+"fortemente raccomandato!"
+
+#: modules/update/update.module:459
+msgid ""
+"Your version of Drupal is no longer supported. Upgrading is strongly "
+"recommended!"
+msgstr ""
+"La tua versione di Drupal non è più supportata. L'aggiornamento è fortemente "
+"raccomandato!"
+
+#: modules/update/update.module:462
+msgid ""
+"The installed version of at least one of your modules or themes is no longer "
+"supported. Upgrading or disabling is strongly recommended! Please see the "
+"project homepage for more details."
+msgstr ""
+"La versione installata di almeno uno dei moduli o dei tuoi temi non è più "
+"supportata. Si raccomanda caldamente di aggiornarli o disabilitarli! Visita "
+"la pagina del progetto per ulteriori dettagli."
+
+#: modules/update/update.module:479
+msgid ""
+"There was a problem determining the status of available updates for your "
+"version of Drupal."
+msgstr ""
+"Si è verificato un problema nel determinare lo stato degli aggiornamenti "
+"disponibili per la versione di Drupal."
+
+#: modules/update/update.module:482
+msgid ""
+"There was a problem determining the status of available updates for one or "
+"more of your modules or themes."
+msgstr ""
+"Si è verificato un problema nel determinare lo stato degli aggiornamenti "
+"disponibili per uno o più moduli o temi."
+
+#: modules/update/update.report.inc:48
+msgid "ok"
+msgstr "ok"
+
+#: modules/update/update.settings.inc:37
+msgid "E-mail notification threshold"
+msgstr "Soglia di notifiche e-mail"
+
+#: modules/update/update.settings.inc:43
+msgid ""
+"You can choose to send e-mail only if a security update is available, or to "
+"be notified about all newer versions. If there are updates available of "
+"Drupal core or any of your installed modules and themes, your site will "
+"always print a message on the <a href=\"@status_report\">status report</a> "
+"page, and will also display an error message on administration pages if "
+"there is a security update."
+msgstr ""
+"Si può scegliere di spedire una e-mail solo se è disponibile un "
+"aggiornamento di sicurezza, o di essere informati su tutte le versioni più "
+"nuove. Se ci sono aggiornamenti disponibili per il core di Drupal o di uno "
+"dei moduli e temi installati, il sito mostrerà sempre un messaggio nella "
+"pagina di <a href=\"@status_report\">rapporto sullo stato</a> e mostrerà "
+"anche un messaggio d'errore nelle pagine amministrative se esiste un "
+"aggiornamento di sicurezza."
+
+#: modules/update/update.compare.inc:308
+msgid "Failed to fetch available update data"
+msgstr "Fallito il tentativo di scaricare gli aggiornamenti disponibili"
+
+#: modules/update/update.fetch.inc:14,82
+msgid ""
+"Attempted to fetch information about all available new releases and updates."
+msgstr ""
+"Tentativo di prelevare informazioni su tutte le nuove versioni disponibili e "
+"aggiornamenti."

@@ -1,0 +1,72 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from files:
+#  help.admin.inc,v 1.5 2007/11/25 11:11:17 goba
+#  help.module,v 1.78.2.1 2008/04/09 21:11:48 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2008-11-18 00:26+0100\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/help/help.admin.inc:30
+msgid "No help is available for module %module."
+msgstr "Aiuto non disponibile per il modulo %module."
+
+#: modules/help/help.admin.inc:41
+msgid "@module administration pages"
+msgstr "pagine di amministrazione @module"
+
+#: modules/help/help.admin.inc:15
+msgid "Help topics"
+msgstr "Argomenti di aiuto"
+
+#: modules/help/help.admin.inc:15
+msgid "Help is available on the following items:"
+msgstr "L'aiuto è disponibile sui seguenti elementi:"
+
+#: modules/help/help.module:41
+msgid ""
+"This guide provides context sensitive help on the use and configuration of "
+"<a href=\"@drupal\">Drupal</a> and its modules, and is a supplement to the "
+"more extensive online <a href=\"@handbook\">Drupal handbook</a>. The online "
+"handbook may contain more up-to-date information, is annotated with helpful "
+"user-contributed comments, and serves as the definitive reference point for "
+"all Drupal documentation."
+msgstr ""
+"Questa guida offre un aiuto mirato al contesto sull'uso e la configurazione "
+"di <a href=\"@handbook\">Drupal</a> e dei suoi moduli, ed è un supplemento "
+"al più completo <a href=\"@handbook\">Manuale Drupal</a> che si trova on-"
+"line. Il manuale on-line può contenere informazioni più aggiornate, è "
+"integrato con utili commenti dagli utenti, e costituisce una punto di "
+"riferimento primario per tutta la documentazione di Drupal."
+
+#: modules/help/help.module:44
+msgid ""
+"The help module provides context sensitive help on the use and configuration "
+"of <a href=\"@drupal\">Drupal</a> and its modules, and is a supplement to "
+"the more extensive online <a href=\"@handbook\">Drupal handbook</a>. The "
+"online handbook may contain more up-to-date information, is annotated with "
+"helpful user-contributed comments, and serves as the definitive reference "
+"point for all Drupal documentation."
+msgstr ""
+"Questa guida offre un aiuto mirato al contesto sull'uso e la configurazione "
+"di <a href=\"@handbook\">Drupal</a> e dei suoi moduli, ed è un supplemento "
+"al più completo <a href=\"@handbook\">Manuale Drupal</a> che si trova on-"
+"line. Il manuale on-line può contenere informazioni più aggiornate, è "
+"integrato con utili commenti dagli utenti e costituisce un punto di "
+"riferimento per tutta la documentazione di Drupal."
+
+#: modules/help/help.module:45
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@help"
+"\">Help module</a>."
+msgstr ""
+"Per maggiori informazioni consulta il manuale on-line per il <a href=\"@help"
+"\">modulo 'help'</a>."

@@ -1,0 +1,178 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from files:
+#  throttle.admin.inc,v 1.2 2008/01/08 10:35:43 goba
+#  throttle.module,v 1.83 2007/12/14 18:08:49 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2008-12-08 11:41+0100\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/throttle/throttle.admin.inc:21
+msgid "Auto-throttle on anonymous users"
+msgstr "Limitatore automatico per gli utenti anonimi"
+
+#: modules/throttle/throttle.admin.inc:25
+msgid ""
+"The congestion control throttle can be automatically enabled when the number "
+"of anonymous users currently visiting your site exceeds the specified "
+"threshold. For example, to start the throttle when your site has 250 "
+"anonymous users online at once, enter '250' in this field. Leave this value "
+"blank or set to \"0\" if you do not wish to auto-throttle on anonymous "
+"users. You can inspect the current number of anonymous users using the "
+"\"Who's online\" block."
+msgstr ""
+"Il controllo limitatore di congestione può essere attivato automaticamente "
+"quando il numero di visitatori anonimi che si trovano in un dato momento ad "
+"accedere al sito eccede la soglia specificata. Per esempio, per avviare il "
+"limitatore quando il tuo sito ha 250 utenti anonimi on-line nello stesso "
+"momento, inserisci '250' in questo campo. Lascia in bianco questo valore o "
+"impostalo su '0' se non vuoi auto-limitare i visitatori anonimi. Puoi "
+"determinare l'attuale numero di visitatori anonimi usando il blocco «Chi c'è "
+"on-line»."
+
+#: modules/throttle/throttle.admin.inc:29
+msgid "Auto-throttle on authenticated users"
+msgstr "Limitatore automatico per gli utenti autenticati"
+
+#: modules/throttle/throttle.admin.inc:33
+msgid ""
+"The congestion control throttle can be automatically enabled when the number "
+"of authenticated users currently visiting your site exceeds the specified "
+"threshold. For example, to start the throttle when your site has 50 "
+"registered users online at once, enter '50' in this field. Leave this value "
+"blank or set to \"0\" if you do not wish to auto-throttle on authenticated "
+"users. You can inspect the current number of authenticated users using the "
+"\"Who's online\" block."
+msgstr ""
+"Il controllo limitatore di congestione può essere attivato automaticamente "
+"quando il numero di visitatori autenticati che si trovano in un dato momento "
+"ad accedere al sito eccede la soglia specificata. Per esempio, per avviare "
+"il limitatore quando il tuo sito ha 50 utenti registrati on-line nello "
+"stesso momento, inserisci '50' in questo campo. Lascia in bianco questo "
+"valore o impostalo su '0' se non desideri auto-limitare l'accesso dei "
+"visitatori autenticati. Puoi determinare l'attuale numero di visitatori "
+"autenticati usando il blocco «Who's online»."
+
+#: modules/throttle/throttle.admin.inc:37
+msgid "Auto-throttle probability limiter"
+msgstr "Soglia di probabilità del limitatore automatico"
+
+#: modules/throttle/throttle.admin.inc:40
+msgid ""
+"The auto-throttle probability limiter is an efficiency mechanism to "
+"statistically reduce the overhead of the auto-throttle. The limiter is "
+"expressed as a percentage of page views, so for example if set to the "
+"default of 10% we only perform the extra database queries to update the "
+"throttle status 1 out of every 10 page views. The busier your site, the "
+"lower you should set the limiter value."
+msgstr ""
+"Il limitatore di probabilità per il controllo automatico ('throttle') è un "
+"efficiente meccanismo per ridurre statisticamente il consumo di risorse del "
+"controllo automatico. Il limitatore è espresso in termini di percentuale di "
+"pagine visitate, così se per esempio è impostato sul valore predefinito 10%, "
+"saranno eseguite chiamate extra al database per aggiornare lo stato del "
+"limitatore per 1 pagina visitata su 10. Più il tuo sito è trafficato, più "
+"basso dovrà essere il valore da impostare per il limitatore."
+
+#: modules/throttle/throttle.admin.inc:50,53
+msgid ""
+"%value is not a valid auto-throttle setting. Please enter a positive numeric "
+"value."
+msgstr ""
+"%value non è un'impostazione di limitatore automatico valida. Inserisci per "
+"favore un valore numerico positivo."
+
+#: modules/throttle/throttle.module:110
+msgid "throttle"
+msgstr "limitatore"
+
+#: modules/throttle/throttle.module:87
+msgid "1 user accessing site; throttle enabled."
+msgid_plural "@count users accessing site; throttle enabled."
+msgstr[0] "1 utente sta visitando il sito; limitatore attivo."
+msgstr[1] "@count utenti stanno visitando il sito; limitatore attivo."
+
+#: modules/throttle/throttle.module:95
+msgid "1 guest accessing site; throttle enabled."
+msgid_plural "@count guests accessing site; throttle enabled."
+msgstr[0] "1 ospite sta visitando il sito; limitatore attivo."
+msgstr[1] "@count ospiti stanno visitando il sito; limitatore attivo."
+
+#: modules/throttle/throttle.module:105
+msgid "1 guest accessing site; throttle disabled"
+msgid_plural "@count guests accessing site; throttle disabled"
+msgstr[0] "1 ospite sta visitando il sito; limitatore disattivato."
+msgstr[1] "@count ospiti stanno visitando il sito; limitatore disattivato."
+
+#: modules/throttle/throttle.module:12
+msgid "Control how your site cuts out content during heavy load."
+msgstr ""
+"Controlla come il tuo sito taglia via contenuti durante caricamenti pesanti."
+
+#: modules/throttle/throttle.module:121
+msgid ""
+"The throttle module provides a congestion control mechanism that "
+"automatically adjusts to a surge in incoming traffic. If your site is "
+"referenced by a popular website, or experiences a \"Denial of Service"
+"\" (DoS) attack, your webserver might become overwhelmed. The throttle "
+"mechanism is utilized by modules to temporarily disable CPU-intensive "
+"functionality, increasing performance. For instance, via the throttle "
+"module, modules may choose to disable resource-intensive blocks or the code "
+"within the site theme may temporarily disable user pictures in posts."
+msgstr ""
+"Il modulo 'throttle' fornisce un meccanismo di controllo delle congestioni "
+"che calibra automaticamente il traffico entrante. Se il tuo sito viene "
+"citato da un altro sito molto popolare o se è in corso un attacco di tipo "
+"«Denial of Service» (DoS), il server potrebbe sovraccaricarsi. Il meccanismo "
+"di limitazione è utilizzato dai moduli per disattivare temporaneamente le "
+"funzionalità che richiedono più CPU, aumentando le prestazioni. Ad esempio, "
+"tramite il modulo 'throttle', i moduli possono scegliere di disattivare i "
+"blocchi che richiedono più potenza di calcolo oppure il codice del tema "
+"potrebbe disattivare temporaneamente i ritratti degli utenti nei contenuti."
+
+#: modules/throttle/throttle.module:122
+msgid ""
+"The congestion control throttle can be automatically enabled when the number "
+"of anonymous or authenticated users currently visiting the site exceeds a "
+"specified threshold."
+msgstr ""
+"Il sistema di controllo delle congestioni può essere automaticamente "
+"attivato quando il numero di utenti anonimi o autenticati che visitano il "
+"sito superano il valore specificato."
+
+#: modules/throttle/throttle.module:123
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@throttle"
+"\">Throttle module</a>."
+msgstr ""
+"Per maggiori informazioni consulta il manuale on-line per il <a href="
+"\"@throttle\">modulo 'throttle'</a>."
+
+#: modules/throttle/throttle.module:126
+msgid ""
+"The throttle module provides a congestion control mechanism that "
+"automatically adjusts to a surge in incoming traffic. If your site is "
+"referenced by a popular website, or experiences a \"Denial of Service"
+"\" (DoS) attack, your webserver might become overwhelmed. The throttle "
+"mechanism is utilized by modules to temporarily disable CPU-intensive "
+"functionality, increasing performance."
+msgstr ""
+"Il modulo 'throttle' fornisce un meccanismo di controllo delle congestioni "
+"che calibra automaticamente il traffico entrante. Se il tuo sito viene "
+"riportato da un altro sito molto popolare o se è in corso un attacco di tipo "
+"\"Denial of Service\" (DoS), il server potrebbe sovraccaricarsi. Il "
+"meccanismo di limitazione è utilizzato dai moduli per disattivare "
+"temporaneamente le funzionalità che richiedono più CPU, aumentando le "
+"prestazioni."
+
+#: modules/throttle/throttle.module:110
+msgid "Throttle: %message"
+msgstr "Limitatore: %message"

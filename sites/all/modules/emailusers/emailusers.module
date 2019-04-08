@@ -1,0 +1,183 @@
+<?php
+
+// $Id$
+/**
+ * This module provides an email interface for administrators.
+ * Using this module, administrators can send email to a user from the
+ * user's "view" page.
+ * @file
+ */
+
+/**
+ * implementation of hook_help()
+ */
+function emailusers_help($path, $arg) {
+    if ($path == 'admin/help#emailusers') {
+        $txt = 'This module provides a way for an administrator to send' .
+                'email to a user. ' .
+                'It assumes that the Drupal mailer is configured.';
+        return '<p>' . t($txt) . '</p>';
+    }
+}
+
+/**
+ * Implementation of hook_menu()
+ */
+function emailusers_menu() {
+// Need to pass User ID here:
+    $items['admin/emailusers/compose/%'] = array(
+        'title' => 'Compose a Message',
+        'page callback' => 'emailusers_compose',
+        //Thus, admin is 0, emailusers is 1, compose is 2, and the value of the placeholder (the User ID 1) is 3.
+        'page arguments' => array(3), // <- userID (from % in node path)
+        'access arguments' => array('administer users'),
+        'type' => MENU_CALLBACK,
+    );
+    return $items;
+}
+
+function emailusers_compose($userid) {
+//    printf("USER ID = %s", $userid);
+
+    $userid = intval($userid);
+    if ($userid == 0) {
+        return t('User ID must be an integer.');
+    }
+    $account = user_load($userid);
+    if (empty($account)) {
+        return t('No such user found.');
+    }
+
+//    echo "<pre>";
+//    print_r($account);
+//    echo "</pre>";
+//    exit();
+
+    $to = $account->mail;
+    $sb = '<p>'
+            . t('Send a message to @email.', array('@email' => $to))
+            . '</p>';
+    $sb .= drupal_get_form('emailusers_compose_form', $account);
+    return $sb;
+}
+
+function emailusers_compose_form($context, $account) {
+// This is a value only -- equivalent to a hidden field, except
+// that it is never rendered into the HTML.
+    $form['to'] = array(
+        '#type' => 'value',
+        '#value' => $account,
+    );
+// Create a fieldset for the body:
+    $form['message'] = array(
+        '#type' => 'fieldset',
+        '#title' => t('Compose the Message'),
+    );
+// Textfield for subject of the body
+    $form['message']['subject'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Subject'),
+        '#size' => 50,
+        '#maxlengh' => 255,
+        '#description' => t('The subject of the email message.'),
+    );
+// And a text area for the body.
+    $form['message']['body'] = array(
+        '#type' => 'textarea',
+        '#title' => t('Message'),
+        '#cols' => 50,
+        '#rows' => 5,
+        '#description' => t('The body of the email message.'),
+    );
+// Create a fieldset for details
+    $form['details'] = array(
+        '#type' => 'fieldset',
+        '#title' => t("Details"),
+    );
+// Checkbox: if checked, CC the author, too.
+    $form['details']['cc_me'] = array(
+        '#type' => 'checkbox',
+        '#title' => t('BCC Yourself'),
+        '#default_value' => 1,
+        '#description' =>
+        t('If this is checked, the message will also be sent to you.'),
+    );
+// Finally, a submit button:
+    $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => t('Send Mail'),
+    );
+    return $form;
+}
+
+/**
+ * Form submission handler, which functions like a hook.
+ * Note that the params $form and &$form_state are new in D6. They
+ * replace $form_id and $form_values.
+ */
+function emailusers_compose_form_submit($form, &$form_state) {
+
+//    echo "<pre>";
+//    print_r(variable_get('site_mail', null));
+//    echo "</pre>";
+//    exit();
+
+    $form_values = $form_state['values'];
+    $account = $form_values['to'];
+    drupal_mail(
+            'emailusers', 'composemessage', $account->mail, user_preferred_language($account), $form_values, variable_get('site_mail', null), true // Automatically send
+    );
+    $form_state['redirect'] = sprintf('user/%d', $account->uid);
+}
+
+/**
+ * Implementation of hook_mail()
+ */
+function emailusers_mail($key, &$message, $params) {
+
+//    echo "<pre>";
+//    print_r($params);
+//    echo "</pre>";
+//    exit();
+// Just catch calls to this hook from compose form.
+    if ($key == 'composemessage') {
+        $language = $params['language'];
+        $account = $params['to'];
+        if ($params['cc_me']) {
+// Look up current user's email address:
+            $my_account = user_current_load(null);
+            $message['headers']['bcc'] = $my_account->mail;
+        }
+        $message['to'] = $account->mail;
+        $message['subject'] = t('Drupal Message: ', array(), $language->language);
+// If these were automatically-generated messages, they should be
+// run through t(), but since text is user-entered, don't use
+// t().
+        $message['subject'] .= $params['subject'];
+        $message['body'] = $params['body'];
+    }
+}
+
+/**
+ * Implementation of hook_user().
+ */
+function emailusers_user($op, &$edit, &$account, $category) {
+    if ($op == 'view' && user_access('administer users')) {
+// Create the outer "block"
+        $account->content['EmailUsers'] = array(
+            '#type' => 'user_profile_category',
+            '#attributes' => array('class' => 'user-member'),
+            '#weight' => 0,
+            '#title' => t('Contact user'),
+        );
+// Create the content of the block
+        $account->content['EmailUsers']['EmailLink'] = array(
+            '#type' => 'user_profile_item',
+            '#title' => t('Send a message to this user from the site '
+                    . 'administrator.'),
+            '#value' => l(
+                    'Email', 'admin/emailusers/compose/' . $account->uid
+            ),
+        );
+    }
+}

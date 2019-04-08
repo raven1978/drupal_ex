@@ -1,0 +1,6 @@
+<?php
+
+function hello_init()
+{
+    drupal_set_message("HELLO WORLD!");
+}

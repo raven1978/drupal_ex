@@ -1,0 +1,54 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from file: ping.module,v 1.52 2007/12/19 17:45:42 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2008-11-18 00:29+0100\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/ping/ping.module:55
+msgid "Failed to notify pingomatic.com (site)."
+msgstr "Impossibile notificare a pingomatic.com (sito)."
+
+#: modules/ping/ping.module:55
+msgid "directory ping"
+msgstr "ping della directory"
+
+#: modules/ping/ping.module:15
+msgid ""
+"The ping module is useful for notifying interested sites that your site has "
+"changed. It automatically sends notifications, or \"pings\", to the <a href="
+"\"@external-http-pingomatic-com\">pingomatic</a> service about new or "
+"updated content. In turn, <a href=\"@external-http-pingomatic-com"
+"\">pingomatic</a> notifies other popular services, including weblogs.com, "
+"Technorati, blo.gs, BlogRolling, Feedster.com, and Moreover."
+msgstr ""
+"Il modulo ping è utile per far notificare i siti esterni delle modifiche ai "
+"contenuti del vostro sito. Questo modulo manda automaticamente delle "
+"notifiche (ping) al servizio <a href=\"@external-http-pingomatic-com"
+"\">pingomatic</a> riguardo ai nuovi contenuti. ll <a href=\"@external-http-"
+"pingomatic-com\">pingomatic</a> a sua volta notifica altri servizi come "
+"weblogs.com, Technorati, blo.gs, BlogRolling, Feedster.com, etc."
+
+#: modules/ping/ping.module:16
+msgid ""
+"The ping module requires a correctly configured <a href=\"@cron\">cron "
+"maintenance task</a>."
+msgstr ""
+"Il modulo ping richiede un <a href=\"@cron\">processo di manutenzione del "
+"cron</a> correttamente configurato."
+
+#: modules/ping/ping.module:17
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@ping"
+"\">Ping module</a>."
+msgstr ""
+"Per maggiori informazioni consulta il manuale on-line per il <a href=\"@ping"
+"\">modulo 'ping'</a>."

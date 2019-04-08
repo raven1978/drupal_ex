@@ -1,0 +1,36 @@
+<?php
+
+function mymodule_help($path, $arg) {
+    switch ($path) {
+        case 'admin/help#mymodule':
+            return '<p><strong>' . t('This is help text for Il Mio Modulo.') . '</strong></p>';
+    }
+}
+
+function mymodule_saluto() {
+    return '<b>' . t('Say Hello to the world') . '</b>';
+//    return array('#markup' => '<p>' . t('Say Hello to the world') . '</p>');
+//    return "BABY RUTH";
+}
+
+function mymodule_menu() {
+    $items['mymodule'] = array(
+        'title' => 'Pagina di saluto',
+        'page callback' => 'mymodule_saluto',
+//        'access callback' => TRUE,
+        'access arguments' => array('accesso ad una nuova pagina'),
+    );
+    return $items;
+}
+
+//function mymodule_menu() {
+//  $items['abc/def'] = array(
+//    'page callback' => 'mymodule_abc_view',
+//    'access callback' => TRUE,
+//  );
+//  return $items;
+//}
+//function mymodule_abc_view($ghi = 0, $jkl = '') {
+//
+//  return drupal_set_message('hello');
+//}

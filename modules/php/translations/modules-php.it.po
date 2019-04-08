@@ -1,0 +1,252 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from files:
+#  php.module,v 1.8.2.1 2008/02/05 09:29:50 goba
+#  php.install,v 1.1 2007/04/24 10:54:34 dries
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2008-11-18 00:29+0100\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/php/php.module:32
+msgid "You may post PHP code. You should include &lt;?php ?&gt; tags."
+msgstr "Puoi pubblicare codice PHP. Devi includere i marcatori &lt;?php ?&gt;."
+
+#: modules/php/php.module:75
+msgid "PHP evaluator"
+msgstr "Analizzatore PHP"
+
+#: modules/php/php.module:16
+msgid ""
+"The PHP filter adds the ability to include PHP code in posts. PHP is a "
+"general-purpose scripting language widely-used for web development; the "
+"content management system used by this website has been developed using PHP."
+msgstr ""
+"Il filtro PHP aggiunge la possibilità di includere del codice PHP nei "
+"contenuti. PHP è un linguaggio di scripting versatile ampiamente usato per "
+"lo sviluppo del web; il sistema di gestione dei contenuti (CMS) usato da "
+"questo sito è stato sviluppato usando il PHP."
+
+#: modules/php/php.module:17
+msgid ""
+"Through the PHP filter, users with the proper permission may include custom "
+"PHP code within a page of the site. While this is a powerful and flexible "
+"feature if used by a trusted user with PHP experience, it is a significant "
+"and dangerous security risk in the hands of a malicious user. Even a trusted "
+"user may accidentally compromise the site by entering malformed or incorrect "
+"PHP code. Only the most trusted users should be granted permission to use "
+"the PHP filter, and all PHP code added through the PHP filter should be "
+"carefully examined before use."
+msgstr ""
+"Tramite il filtro PHP, gli utenti con il permesso appropriato possono "
+"includere codice PHP personalizzato all'interno di una pagina del sito. Pur "
+"essendo una caratteristica potente e flessibile se usata da utenti fidati "
+"dotati di esperienza con PHP, è un rischio significativo e pericoloso nelle "
+"mani di un utente malevolo. Perfino un utente fidato potrebbe "
+"accidentalmente compromettere il sito immettendo codice PHP malformato o "
+"errato. Pertanto la possibilità di usare codice PHP dovrebbe essere "
+"consentita solo agli utenti più fidati e tutto il codice aggiunto andrebbe "
+"attentamente esaminato prima di essere usato."
+
+#: modules/php/php.module:61,18
+msgid ""
+"<a href=\"@drupal\">Drupal.org</a> offers <a href=\"@php-snippets\">some "
+"example PHP snippets</a>, or you can create your own with some PHP "
+"experience and knowledge of the Drupal system."
+msgstr ""
+"<a href=\"@drupal\">Drupal.org</a> offre <a href=\"@php-snippets\">alcuni "
+"esempi di piccoli e utili codici PHP</a>, oppure è possibile crearne di "
+"propri con un po' di esperienza con PHP e conoscenza di Drupal."
+
+#: modules/php/php.module:19
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@php\">PHP "
+"module</a>."
+msgstr ""
+"Per maggiori informazioni consulta il manuale on-line per il <a href=\"@php"
+"\">modulo 'PHP'</a>."
+
+#: modules/php/php.module:34
+msgid "Using custom PHP code"
+msgstr "Codice PHP personalizzato in uso"
+
+#: modules/php/php.module:35
+msgid ""
+"Custom PHP code may be embedded in some types of site content, including "
+"posts and blocks. While embedding PHP code inside a post or block is a "
+"powerful and flexible feature when used by a trusted user with PHP "
+"experience, it is a significant and dangerous security risk when used "
+"improperly. Even a small mistake when posting PHP code may accidentally "
+"compromise your site."
+msgstr ""
+"Il codice PHP personalizzato può essere inserito in alcune parti del sito, "
+"compresi contenuti e blocchi. Inserire codice PHP personalizzato all'interno "
+"di contenuti e blocchi è una funzione molto potente e flessibile se usata da "
+"utenti esperti, bisogna comunque tenere presente che si corre il serio "
+"rischio di esporsi a danni e guai seri nella sicurezza del sito se lo si usa "
+"impropriamente. Anche un piccolo errore durante la pubblicazione del codice "
+"PHP può compromettere il sito."
+
+#: modules/php/php.module:36
+msgid ""
+"If you are unfamiliar with PHP, SQL, or Drupal, avoid using custom PHP code "
+"within posts. Experimenting with PHP may corrupt your database, render your "
+"site inoperable, or significantly compromise security."
+msgstr ""
+"Se non hai confidenza con PHP, SQL e Drupal evita l'utilizzo di codice PHP "
+"personalizzato all'interno dei post. Sperimentare col PHP potrebbe "
+"danneggiare il database, rendere il sito inaccessibile o comprometterne "
+"seriamente la sicurezza."
+
+#: modules/php/php.module:37
+msgid "Notes:"
+msgstr "Note:"
+
+#: modules/php/php.module:38
+msgid ""
+"Remember to double-check each line for syntax and logic errors "
+"<strong>before</strong> saving."
+msgstr ""
+"Ricorda di controllare più volte ogni linea di codice per la sintassi e gli "
+"errori logici <strong>prima</strong> di salvare."
+
+#: modules/php/php.module:39
+msgid "Statements must be correctly terminated with semicolons."
+msgstr ""
+"Le dichiarazioni devono come da regola terminare con il punto e virgola."
+
+#: modules/php/php.module:40
+msgid ""
+"Global variables used within your PHP code retain their values after your "
+"script executes."
+msgstr ""
+"Le variabili globali usati all'interno del vostro codice PHP mantengono i "
+"loro valori anche dopo l'esecuzione dello script."
+
+#: modules/php/php.module:41
+msgid ""
+"<code>register_globals</code> is <strong>turned off</strong>. If you need to "
+"use forms, understand and use the functions in <a href=\"@formapi\">the "
+"Drupal Form API</a>."
+msgstr ""
+"<code>register_globals</code> è <strong>disabilitato</strong>. Se si vuole "
+"utilizzare le form, comprendere e usare le funzioni contenute in <a href="
+"\"@formapi\">Drupal Form API</a>."
+
+#: modules/php/php.module:42
+msgid ""
+"Use a <code>print</code> or <code>return</code> statement in your code to "
+"output content."
+msgstr ""
+"Usa il comando <code>print</code> o <code>return</code> per ottenere "
+"l'output del contenuto."
+
+#: modules/php/php.module:43
+msgid ""
+"Develop and test your PHP code using a separate test script and sample "
+"database before deploying on a production site."
+msgstr ""
+"Sviluppa e testa il tuo codice PHP usando uno script e un database separati, "
+"prima di usarli in un sito di produzione."
+
+#: modules/php/php.module:44
+msgid ""
+"Consider including your custom PHP code within a site-specific module or "
+"<code>template.php</code> file rather than embedding it directly into a post "
+"or block."
+msgstr ""
+"Considerare l'inclusione del codice PHP personalizzato all'interno di un "
+"modulo specifico al sito oppure del file <code>template.php</code> piuttosto "
+"che incorporarlo direttamente all'interno di un contenuto o di un blocco."
+
+#: modules/php/php.module:45
+msgid ""
+"Be aware that the ability to embed PHP code within content is provided by "
+"the PHP Filter module. If this module is disabled or deleted, then blocks "
+"and posts with embedded PHP may display, rather than execute, the PHP code."
+msgstr ""
+"Bisogna essere consapevoli del fatto che la capacità di incorporare "
+"direttamente codice PHP all'interno di un contenuto è data dal modulo Filtro "
+"PHP. Se questo modulo è disattivato o eliminato, il codice PHP contenuto nei "
+"blocchi e nei contenuti sarà visualizzato, anziché eseguito."
+
+#: modules/php/php.module:46
+msgid ""
+"A basic example: <em>Creating a \"Welcome\" block that greets visitors with "
+"a simple message.</em>"
+msgstr ""
+"Un esempio basilare: <em>Creare un blocco di \"Benvenuto\" che accoglie i "
+"visitatori con un semplice messaggio.</em>"
+
+#: modules/php/php.module:47
+msgid ""
+"<p>Add a custom block to your site, named \"Welcome\". With its input format "
+"set to \"PHP code\" (or another format supporting PHP input), add the "
+"following in the Block body:</p>\n"
+"<pre>\n"
+"print t('Welcome visitor! Thank you for visiting.');\n"
+"</pre>"
+msgstr ""
+"<p>Aggiungi un blocco personalizzato al sito con il nome \"Benvenuto\". Con "
+"il formato input impostato a \"Codice PHP\" (oppure con un altro formato che "
+"supporta PHP), aggiungi nel corpo del Blocco quello che segue:</p>\r\n"
+"<pre>\r\n"
+"print t('Benvenuto visitatore! Grazie per la visita.');\r\n"
+"</pre>"
+
+#: modules/php/php.module:51
+msgid ""
+"<p>To display the name of a registered user, use this instead:</p>\n"
+"<pre>\n"
+"global $user;\n"
+"if ($user->uid) {\n"
+"  print t('Welcome @name! Thank you for visiting.', array('@name' => $user-"
+">name));\n"
+"}\n"
+"else {\n"
+"  print t('Welcome visitor! Thank you for visiting.');\n"
+"}\n"
+"</pre>"
+msgstr ""
+"<p>Per visualizzare il nome dell'utente registrato, usate questo<p>\r\n"
+"<pre>\r\n"
+"global $user;\r\n"
+"if ($user->uid) {\r\n"
+"  print t('Benvenuto @name! Grazie per averci visitato.', array('@name' => "
+"$user->name));\r\n"
+"}\r\n"
+"else {\r\n"
+"  print t('Benvenuto visitatore! Grazie per averci visitato.');\r\n"
+"}\r\n"
+"</pre>"
+
+#: modules/php/php.module:80
+msgid ""
+"Executes a piece of PHP code. The usage of this filter should be restricted "
+"to administrators only!"
+msgstr ""
+"Esegue un pezzo di codice PHP. L'uso di questo filtro dovrebbe essere "
+"permesso solamente agli amministratori!"
+
+#: modules/php/php.install:20
+msgid "A !php-code input format has been created."
+msgstr "Un formato di input !php-code è stato creato."
+
+#: modules/php/php.install:28
+msgid ""
+"The PHP module has been disabled. Please note that any existing content that "
+"was using the PHP filter will now be visible in plain text. This might pose "
+"a security risk by exposing sensitive information, if any, used in the PHP "
+"code."
+msgstr ""
+"Il modulo PHP è stato disabilitato. N.B. qualunque contenuto che usava il "
+"filtro PHP adesso sarà visibile come un normale testo. Questo potrebbe "
+"comportare un rischio se nel codice php sono presenti delle informazioni "
+"sensibili."

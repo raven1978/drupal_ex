@@ -1,0 +1,142 @@
+<?php
+
+// $Id$
+/**
+ * @file
+ * Module for dynamic display of pithy philosophy quotes.
+ */
+
+/**
+ * Implementation of hook_help()
+ */
+function philquotes_help($path, $arg) {
+    if ($path == 'admin/help#philquotes') {
+        $txt = 'This module displays philosophical quotes in blocks. ' .
+                'It assumes the existence of a content type named "quote".';
+        return '<p><i>' . t($txt) . '</i></p>';
+    }
+}
+
+/**
+ * Implementation of hook_block().
+ */
+function philquotes_block($op = 'list', $delta = 0, $edit = array()) {
+    switch ($op) {
+        case 'list':
+            $blocks[0]['info'] = t('Philosophical Quotes');
+            return $blocks;
+        case 'view':
+            $item = _philquotes_get_quote();
+
+            if (!empty($item)) {
+                $content = theme('philquotes_quote', check_plain($item->body), check_plain($item->title));
+//                $content = theme('test_quote', check_plain($item->body), check_plain($item->title));
+                $blocks['subject'] = t('Pithy Quote');
+                $blocks['content'] = $content;
+//                $blocks['content'] = "<b>" . $item->title . "</b> - " . $item->body;
+                return $blocks;
+            }
+    }
+
+    return $blocks;
+}
+
+function _philquotes_get_quote() {
+    $sql = "SELECT nid FROM {node} " .
+            "WHERE status=1 AND type='quote' ORDER BY RAND() LIMIT 1";
+    $res = db_query($sql);
+    $item = db_fetch_object($res);
+
+    $quote = node_load($item->nid);
+
+    return $quote;
+}
+
+/**
+ * Implementation of hook_theme().
+ */
+//REGISTER FUNCTION philquotes_quote TO A THEME SYSTEM
+function philquotes_theme() {
+    return array(
+        'philquotes_quote' => array(
+            'arguments' => array('text' => NULL, 'origin' => NULL),
+        ),
+        'test_quote' => array(
+            'arguments' => array('text' => NULL, 'origin' => NULL),
+        ),
+    );
+}
+
+/**
+ * Theme function for theming quotes.
+ *
+ * @param $text
+ * The quote content as a string.
+ * @param $origin
+ * The original source of the quote, as a string.
+ * @return
+ * An HTML themed string.
+ */
+//REGISTERED FUNCTION philquotes_quote  WITH 'theme_' prefix
+function theme_philquotes_quote($text, $origin) {
+
+    $module_path = drupal_get_path('module', 'philquotes');
+    $full_path = $module_path . '/philquotes.css';
+
+    drupal_add_css($full_path);
+
+    drupal_add_js($module_path . '/philquotes.js');
+
+    $opts = array('absolute' => TRUE);
+    $json_url = url('philquotes.json', $opts);
+   
+//    drupal_add_js('alert("Hello!")', 'inline');
+    
+
+    drupal_add_js(
+        array('philquotes' =>
+            array("json_url" => $json_url)), 'setting');
+
+//    drupal_add_js('alert(Drupal.settings.philquotes.json_url)', 'inline');
+
+    $output = '<div id="philquotes-text">' . t($text)
+            . '</div><div id="philquotes-origin" style="background-color: #efefef"><b><i>-' . t($origin) . '-</i></b></div>';
+    return $output;
+}
+
+function theme_test_quote($text, $origin) {
+
+    $module_path = drupal_get_path('module', 'philquotes');
+    $full_path = $module_path . '/philquotes.css';
+    drupal_add_css($full_path);
+
+//    $output = '<div id="philquotes-text">' . t($text)
+//            . '</div><div id="philquotes-origin" style="background-color: #efefef"><b><i>-' . t($origin) . '-</i></b></div>';
+    $output = t($text) . " --- " . t($origin);
+
+    return $output;
+}
+
+/**
+ * Callback to handle requests for philquotes content.
+ * @return
+ * JSON data.
+ */
+function philquotes_item() {
+    $item = _philquotes_get_quote();
+    drupal_set_header('Content-Type: text/plain; charset: utf-8');
+    printf('{ "quote": { "origin": "%s", "text": "%s"}}', $item->title, $item->body);
+}
+
+/**
+ * Implementaiton of hook_menu()
+ */
+function philquotes_menu() {
+    $items['philquotes.json'] = array(
+        'title' => 'Philquotes AJAX Gateway',
+        'page callback' => 'philquotes_item',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+    return $items;
+}

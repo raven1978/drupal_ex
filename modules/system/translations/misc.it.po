@@ -1,0 +1,77 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from files:
+#  tableselect.js,v 1.8 2007/11/19 12:15:16 goba
+#  teaser.js,v 1.12.2.1 2009/05/20 11:50:54 goba
+#  drupal.js,v 1.41.2.3 2008/06/25 09:06:57 goba
+#  tabledrag.js,v 1.13.2.5 2009/06/18 12:24:24 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2008-02-17 16:28+0100\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: misc/tableselect.js:0
+msgid "Select all rows in this table"
+msgstr "Seleziona tutte le righe in questa tabella"
+
+#: misc/tableselect.js:0
+msgid "Deselect all rows in this table"
+msgstr "Deseleziona tutte le righe in questa tabella"
+
+#: misc/teaser.js:0
+msgid "Join summary"
+msgstr "Unisci il sommario"
+
+#: misc/teaser.js:0
+msgid "Split summary at cursor"
+msgstr "Dividi il sommario nella posizione del cursore"
+
+#: misc/drupal.js:0
+msgid ""
+"An HTTP error @status occurred. \n"
+"@uri"
+msgstr ""
+"Si è verificato un errore HTTP @status. \r\n"
+"@uri"
+
+#: misc/drupal.js:0
+msgid "Unspecified error"
+msgstr "Errore non specificato"
+
+#: misc/tabledrag.js:0
+msgid "Drag to re-order"
+msgstr "Trascina per riordinare"
+
+#: misc/tabledrag.js:0
+msgid ""
+"Changes made in this table will not be saved until the form is submitted."
+msgstr ""
+"I cambiamenti fatti a questa tabella non saranno salvati finchè il form non "
+"viene inviato."
+
+#: misc/drupal.js:0
+msgid ""
+"An error occurred. \n"
+"@uri\n"
+"@text"
+msgstr ""
+"Si è verificato un errore. \r\n"
+"@uri\r\n"
+"@text"
+
+#: misc/drupal.js:0
+msgid ""
+"An error occurred. \n"
+"@uri\n"
+"(no information available)."
+msgstr ""
+"Si è verificato un errore. \r\n"
+"@uri\r\n"
+"(nessuna informazione disponibile)."

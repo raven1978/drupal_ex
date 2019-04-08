@@ -1,0 +1,132 @@
+<?php
+
+// $Id$
+/**
+ * @file
+ * Module for fetching data from Goodreads.com.
+ * This module provides block content retrieved from a
+ * Goodreads.com bookshelf.
+ * @see http://www.goodreads.com
+ */
+
+/**
+ * Implementation of hook_block()
+ */
+function goodreads_block($op = 'list', $delta = 0, $edit = array()) {
+    switch ($op) {
+        case 'list':
+            $blocks[0]['info'] = t('Goodreads Bookshelf');
+            return $blocks;
+        case 'view':
+//            $url = 'http://www.goodreads.com/review/list_rss/'
+//                    . '398385'
+//                    . '?shelf='
+//                    . 'history-of-philosophy';
+            $url = 'http://localhost/drupal-6.38/xmlServe.php';
+
+            $blocks['subject'] = t('On the Bookshelf');
+            $blocks['content'] = _goodreads_fetch_bookshelf($url);
+            return $blocks;
+    }
+}
+
+/**
+ * Retrieve information from the Goodreads bookshelp XML API.
+ *
+ * This makes an HTTP connection to the given URL, and
+ * retrieves XML data, which it then attempts to format
+ * for display.
+ *
+ * @param $url
+ * URL to the goodreads bookshelf.
+ * @param $num_items
+ * Number of items to include in results.
+ * @return
+ * String containing the bookshelf.
+ */
+function _goodreads_fetch_bookshelf($url, $num_items = 3) {
+    $http_result = drupal_http_request($url);
+//            echo "<pre>";
+//        print_r($url);
+//        echo "</pre>";
+//        exit();
+    if ($http_result->code == 200) {
+        $doc = simplexml_load_string($http_result->data);
+        if ($doc === false) {
+            $msg = "Error parsing bookshelf XML for %url: %msg.";
+            $vars = array('%url' => $url, '%msg' => $e->getMessage());
+            watchdog('goodreads', $msg, $vars, WATCHDOG_WARNING);
+            return t("Getting the bookshelf resulted in an error.");
+        }
+        return _goodreads_block_content($doc, $num_items);
+// Otherwise we don't have any data
+    } else {
+        $msg = 'No content from %url.';
+        $vars = array('%url' => $url);
+        watchdog('goodreads', $msg, $vars, WATCHDOG_WARNING);
+        return t("The bookshelf is not accessible.");
+    }
+}
+
+/**
+ * Generate the contents of a block from a SimpleXML object.
+ * Given a SimpleXML object and the maximum number of
+ * entries to be displayed, generate some content.
+ *
+ * @param $doc
+ * SimpleXML object containing Goodreads XML.
+ * @param $num_items
+ * Number of items to format for display.
+ * @return
+ * Formatted string.
+ */
+function _goodreads_block_content($doc, $num_items = 3) {
+    $items = $doc->channel->item;
+    $count_items = count($items);
+    $len = ($count_items < $num_items) ? $count_items : $num_items;
+    $template = '<div class="goodreads-item">'
+            . '<img src="%s"/><br/>%s<br/>by %s</div>';
+// Default image: 'no cover'
+    $default_img = 'http://www.goodreads.com/images/nocover-60x80.jpg';
+    $default_link = 'http://www.goodreads.com';
+    $out = '';
+    foreach ($items as $item) {
+        $author = check_plain($item->author_name);
+        $title = strip_tags($item->title);
+        $link = check_url(trim($item->link));
+        $img = check_url(trim($item->book_image_url));
+        if (empty($author))
+            $author = '';
+        if (empty($title))
+            $title = '';
+        if (empty($link))
+            $link = $default_link;
+        if (empty($img))
+            $img = $default_img;
+        $book_link = l($title, $link);
+        $out .= sprintf($template, $img, $book_link, $author);
+    }
+    $out .= '<br/><div class="goodreads-more">'
+            . l('Goodreads.com', 'http://www.goodreads.com')
+            . '</div>';
+    return $out;
+}
+
+/**
+ * Implementation of hook_help()
+ */
+function goodreads_help($path, $arg) {
+    if ($path == 'admin/help#goodreads') {
+        $txt = 'The Goodreads module uses the !goodreads_url XML '
+                . 'API to retrieve a list of books and display it as block '
+                . 'content.';
+        $link = l('Goodreads.com', 'http://www.goodreads.com');
+        $replace = array(
+            '!goodreads_url' => $link
+        );
+        return '<p>' . t($txt, $replace) . '</p>';
+        
+//        return '<p><strong>' . t('This is help text for Il Mio Modulo.') . '</strong></p>';
+    }
+}
+    

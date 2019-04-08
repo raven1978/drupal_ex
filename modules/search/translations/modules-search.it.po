@@ -1,0 +1,285 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from files:
+#  search.module,v 1.250.2.6 2009/03/10 17:20:01 goba
+#  search.admin.inc,v 1.4 2008/01/08 10:35:42 goba
+#  search.pages.inc,v 1.4 2007/12/06 09:51:01 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2008-12-11 19:04+0100\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/search/search.module:106
+msgid ""
+"<ul>\n"
+"<li>Check if your spelling is correct.</li>\n"
+"<li>Remove quotes around phrases to match each word individually: <em>\"blue "
+"smurf\"</em> will match less than <em>blue smurf</em>.</li>\n"
+"<li>Consider loosening your query with <em>OR</em>: <em>blue smurf</em> will "
+"match less than <em>blue OR smurf</em>.</li>\n"
+"</ul>"
+msgstr ""
+"<ul>\n"
+"<li>Controlla che il tuo spelling sia corretto.</li>\n"
+"<li>Rimuovi le virgolette nelle frasi per far combaciare ogni singola "
+"parola: <em>\"blue smurf\"</em> avrà meno riscontri che <em>blue smurf</em>."
+"</li>\n"
+"<li>Considera la possibilità di estendere la tua ricerca con <em>OR</em>: "
+"<em>blue smurf</em> avrà meno riscontri che <em>blue OR smurf</em>.</li>\n"
+"</ul>"
+
+#: modules/search/search.module:152
+msgid "Search form"
+msgstr "Maschera di ricerca"
+
+#: modules/search/search.module:176
+msgid "Search settings"
+msgstr "Impostazioni di ricerca"
+
+#: modules/search/search.module:177
+msgid "Configure relevance settings for search and other indexing options"
+msgstr ""
+"Configura le impostazioni più adatte alla ricerca a altre opzioni di "
+"indicizzazione."
+
+#: modules/search/search.module:185
+msgid "Clear index"
+msgstr "Pulisci indice"
+
+#: modules/search/search.module:193
+msgid "Top search phrases"
+msgstr "Espressioni di ricerca maggiormente utilizzate"
+
+#: modules/search/search.module:194
+msgid "View most popular search phrases."
+msgstr "Guarda le espressioni di ricerca più popolari."
+
+#: modules/search/search.admin.inc:76,52,14
+msgid "Re-index site"
+msgstr "Reindicizza il sito"
+
+#: modules/search/search.admin.inc:82,23
+msgid "The index will be rebuilt."
+msgstr "L'indice sarà ricostruito."
+
+#: modules/search/search.admin.inc:49
+msgid "%percentage of the site has been indexed."
+msgstr "Il %percentage del sito è stato indicizzato."
+
+#: modules/search/search.admin.inc:50
+msgid "Indexing status"
+msgstr "Stato dell'indicizzazione"
+
+#: modules/search/search.admin.inc:57
+msgid "Indexing throttle"
+msgstr "Limitatore dell'indicizzazione"
+
+#: modules/search/search.admin.inc:60
+msgid "Indexing settings"
+msgstr "Impostazioni indicizzazione"
+
+#: modules/search/search.admin.inc:62
+msgid "Minimum word length to index"
+msgstr "Lunghezza minima della parola da indicizzare"
+
+#: modules/search/search.admin.inc:62
+msgid ""
+"The number of characters a word has to be to be indexed. A lower setting "
+"means better search result ranking, but also a larger database. Each search "
+"query must contain at least one keyword that is this size (or longer)."
+msgstr ""
+"Il numero di caratteri di una stringa per essere indicizzata. Un numero "
+"basso significa risultati migliori nella ricerca, ma anche un database più "
+"grande. Ogni richiesta di ricerca deve contenere almeno una parola che deve "
+"essere di questa grandezza (o superiore)."
+
+#: modules/search/search.admin.inc:63
+msgid "Simple CJK handling"
+msgstr "Semplice gestione CJK"
+
+#: modules/search/search.admin.inc:63
+msgid ""
+"Whether to apply a simple Chinese/Japanese/Korean tokenizer based on "
+"overlapping sequences. Turn this off if you want to use an external "
+"preprocessor for this instead. Does not affect other languages."
+msgstr ""
+"Se viene applicato un semplice preprocessore per la lingua Cinese/Giapponese/"
+"Koreano basato su sequenze in overlapping. Disattivalo se vuoi usare un "
+"preprocessore esterno. Non influenza altri linguaggi."
+
+#: modules/search/search.admin.inc:13
+msgid "Are you sure you want to re-index the site?"
+msgstr "Sei sicuro di volere reindicizzare il sito ?"
+
+#: modules/search/search.admin.inc:14
+msgid ""
+" The search index is not cleared but systematically updated to reflect the "
+"new settings. Searching will continue to work but new content won't be "
+"indexed until all existing content has been re-indexed. This action cannot "
+"be undone."
+msgstr ""
+" L'indice di ricerca non viene cancellato ma aggiornato sistematicamente per "
+"riflettere le nuove impostazioni. La ricerca continuerà a funzionare ma i "
+"nuovi contenuti non verranno indicizzati fintanto che tutti i contenuti "
+"esistenti siano stati reindicizzati. Questa azione non può venire  riportata "
+"indietro."
+
+#: modules/search/search.module:922
+msgid ""
+"You must include at least one positive keyword with @count characters or "
+"more."
+msgstr "Devi inserire almeno una parola-chiave con @count caratteri o più."
+
+#: modules/search/search.pages.inc:29
+msgid "%keys (@type)."
+msgstr "%keys (@type)."
+
+#: modules/search/search.pages.inc:29
+msgid "results"
+msgstr "risultati"
+
+#: modules/search/search.pages.inc:35
+msgid "Search results"
+msgstr "Risultati della ricerca"
+
+#: modules/search/search.pages.inc:38
+msgid "Your search yielded no results"
+msgstr "La tua ricerca non ha prodotto risultati"
+
+#: modules/search/search.module:1033
+msgid "Enter your keywords"
+msgstr "Inserisci le chiavi di ricerca"
+
+#: modules/search/search.pages.inc:123
+msgid "Please enter some keywords."
+msgstr "Devi inserire una o più chiavi di ricerca."
+
+#: modules/search/search.module:1071
+msgid "Enter the terms you wish to search for."
+msgstr "Inserire i termini da cercare."
+
+#: modules/search/search.pages.inc:29
+msgid "search"
+msgstr "'search'"
+
+#: modules/search/search.admin.inc:47
+msgid "There is 1 item left to index."
+msgid_plural "There are @count items left to index."
+msgstr[0] "Manca un solo elemento da indicizzare."
+msgstr[1] "Ci sono @count oggetti da indicizzare."
+
+#: modules/search/search.module:144
+msgid "search content"
+msgstr "cerca tra i contenuti"
+
+#: modules/search/search.module:144
+msgid "use advanced search"
+msgstr "usa la ricerca avanzata"
+
+#: modules/search/search.module:144
+msgid "administer search"
+msgstr "amministra ricerca"
+
+#: modules/search/search.admin.inc:58
+msgid "Number of items to index per cron run"
+msgstr "Numero di oggetti da indicizzare ad ogni avvio del cron"
+
+#: modules/search/search.admin.inc:58
+msgid ""
+"The maximum number of items indexed in each pass of a <a href=\"@cron\">cron "
+"maintenance task</a>. If necessary, reduce the number of items to prevent "
+"timeouts and memory errors while indexing."
+msgstr ""
+"Il numero massimo di voci indicizzate ad ogni passaggio del <a href=\"@cron"
+"\">processo di manutenzione del cron</a>. Se necessario, ridurre il numero "
+"massimo di voci per prevenire errori di time-out e di memoria durante "
+"l'indicizzazione."
+
+#: modules/search/search.admin.inc:61
+msgid ""
+"<p><em>Changing the settings below will cause the site index to be rebuilt. "
+"The search index is not cleared but systematically updated to reflect the "
+"new settings. Searching will continue to work but new content won't be "
+"indexed until all existing content has been re-indexed.</em></p><p><em>The "
+"default settings should be appropriate for the majority of sites.</em></p>"
+msgstr ""
+"<p><em>Cambiando le impostazioni sottostanti l'indice del sito sarà "
+"ricostruito. L'indice di ricerca non viene ripulito ma sistematicamente "
+"aggiornato per riflettere le nuove impostazioni. La ricerca continuerà a "
+"funzionare ma i nuovi contenuti non verranno indicizzati finché tutti i "
+"contenuti esistenti non verranno re-indicizzati.</em></p><p><em>Le "
+"impostazioni predefinite sono appropriate per la maggior parte dei siti</"
+"em></p>"
+
+#: modules/search/search.module:99
+msgid ""
+"The search module adds the ability to search for content by keywords. Search "
+"is often the only practical way to find content on a large site, and is "
+"useful for finding both users and posts."
+msgstr ""
+"Il modulo 'cerca' aggiunge l'abilità di cercare contenuti attraverso le "
+"parole chiave. La ricerca è spesso l'unico modo per trovare contenuti in un "
+"sito di grandi dimensioni, ed è utile per trovare sia utenti che contenuti."
+
+#: modules/search/search.module:100
+msgid ""
+"To provide keyword searching, the search engine maintains an index of words "
+"found in your site's content. To build and maintain this index, a correctly "
+"configured <a href=\"@cron\">cron maintenance task</a> is required. Indexing "
+"behavior can be adjusted using the <a href=\"@searchsettings\">search "
+"settings page</a>; for example, the <em>Number of items to index per cron "
+"run</em> sets the maximum number of items indexed in each pass of a <a href="
+"\"@cron\">cron maintenance task</a>. If necessary, reduce this number to "
+"prevent timeouts and memory errors when indexing."
+msgstr ""
+"Per fornire una ricerca di parole, il motore di ricerca mantiene un indice "
+"di parole trovate all'interno dei contenuti del sito. Per costruire e "
+"mantenere quest'indice, è necessario configurare correttamente il <a href="
+"\"@cron\">processo di manutenzione del cron</a>. Il comportamento "
+"dell'indicizzazione può essere impostato usando la <a href=\"@searchsettings"
+"\">pagina di impostazioni della ricerca</a>; per esempio, il <em>Numero di "
+"voci da indicizzare in per ogni esecuzione del cron</em> imposta il numero "
+"massimo di voci da indicizzare ad ogni esecuzione del <a href=\"@cron"
+"\">processo di manutenzione del cron</a>. Se necessario, ridurre questo "
+"numero per prevenire errori di time-out e di memoria durante "
+"l'indicizzazione."
+
+#: modules/search/search.module:101
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@search"
+"\">Search module</a>."
+msgstr ""
+"Per maggiori informazioni consulta il manuale on-line per il <a href="
+"\"@search\">modulo 'search'</a>."
+
+#: modules/search/search.module:104
+msgid ""
+"The search engine maintains an index of words found in your site's content. "
+"To build and maintain this index, a correctly configured <a href=\"@cron"
+"\">cron maintenance task</a> is required. Indexing behavior can be adjusted "
+"using the settings below."
+msgstr ""
+"Il motore di ricerca mantiene un indice di parole trovate all'interno dei "
+"contenuti del sito. Per costruire e mantenere quest'indice, è necessario "
+"configurare correttamente il <a href=\"@cron\">processo di manutenzione del "
+"cron</a>. Il comportamento dell'indicizzazione può essere impostato con le "
+"impostazioni sottostanti."
+
+#: modules/search/search.module:926
+msgid ""
+"Search for either of the two terms with uppercase <strong>OR</strong>. For "
+"example, <strong>cats OR dogs</strong>."
+msgstr ""
+"Cerca uno dei due termini tramite le maiuscole <strong>OR</strong>. Per "
+"esempio, <strong>gatti OR cani</strong>."
+
+#: modules/search/search.module:1067
+msgid "Search this site"
+msgstr "Cerca nel sito"

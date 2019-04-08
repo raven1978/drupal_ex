@@ -1,0 +1,252 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from files:
+#  upload.admin.inc,v 1.7 2008/01/10 20:22:57 goba
+#  upload.module,v 1.197.2.4 2009/01/12 15:30:23 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2009-08-07 14:18+0200\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/upload/upload.admin.inc:64
+msgid "General settings"
+msgstr "Impostazioni generali"
+
+#: modules/upload/upload.module:21
+msgid ""
+"Users with the <a href=\"@permissions\">upload files permission</a> can "
+"upload attachments. Users with the <a href=\"@permissions\">view uploaded "
+"files permission</a> can view uploaded attachments. You can choose which "
+"post types can take attachments on the <a href=\"@types\">content types "
+"settings</a> page."
+msgstr ""
+"Gli utenti con il <a href=\"@permissions\">permesso di caricare file</a> "
+"possono caricare allegati. Gli utenti con il <a href=\"@permissions"
+"\">permesso di vedere file caricati</a> possono visualizzare e scaricare gli "
+"allegati. Puoi scegliere quali tipi di contenuto possono contenere allegati "
+"nella pagina di <a href=\"@types\">impostazioni tipi di contenuto</a>."
+
+#: modules/upload/upload.module:67
+msgid "Read full article to view attachments."
+msgstr "Leggi l'articolo completo per vedere gli allegati."
+
+#: modules/upload/upload.module:86
+msgid "File uploads"
+msgstr "Caricamento file"
+
+#: modules/upload/upload.module:87
+msgid "Control how files may be attached to content."
+msgstr "Controlla come i file possono essere allegati ai contenuti."
+
+#: modules/upload/upload.admin.inc:10
+msgid ""
+"The maximum allowed image size expressed as WIDTHxHEIGHT (e.g. 640x480). Set "
+"to 0 for no restriction."
+msgstr ""
+"La dimensione massima permessa per un'immagine, espressa come "
+"LARGHEZZAxALTEZZA (es. 640x480). Scrivi 0 per nessuna restrizione."
+
+#: modules/upload/upload.admin.inc:21,24,39,42
+msgid "The %role file size limit must be a number and greater than zero."
+msgstr ""
+"Il limite per la dimensione del file per il ruolo %role deve essere un "
+"numero maggiore di zero."
+
+#: modules/upload/upload.admin.inc:21,24,31
+msgid "default"
+msgstr "predefinito"
+
+#: modules/upload/upload.admin.inc:31,49
+msgid ""
+"The %role maximum file size per upload is greater than the total file size "
+"allowed per user"
+msgstr ""
+"La dimensione massima del file per caricamento per %role è più grande della "
+"dimensione totale dei file permessa per utente."
+
+#: modules/upload/upload.admin.inc:69
+msgid "Maximum resolution for uploaded images"
+msgstr "Risoluzione massima per le immagini caricate"
+
+#: modules/upload/upload.admin.inc:74
+msgid "WIDTHxHEIGHT"
+msgstr "LARGHEZZAxALTEZZA"
+
+#: modules/upload/upload.admin.inc:78
+msgid "List files by default"
+msgstr "Elenca file come impostazione predefinita"
+
+#: modules/upload/upload.module:213
+msgid "Attachments"
+msgstr "Allegati"
+
+#: modules/upload/upload.module:226
+msgid "File attachments"
+msgstr "File allegati"
+
+#: modules/upload/upload.module:229
+msgid ""
+"Changes made to the attachments are not permanent until you save this post. "
+"The first \"listed\" file will be included in RSS feeds."
+msgstr ""
+"Le modifiche fatte agli allegati non sono permanenti finchè non salvi questo "
+"contenuto. Il primo file in \"elenco\" sarà incluso nei feed RSS."
+
+#: modules/upload/upload.module:247
+msgid ""
+"File attachments are disabled. The file directories have not been properly "
+"configured."
+msgstr ""
+"Gli allegati sono disattivati. Le directory per i file non sono state "
+"correttamente configurate."
+
+#: modules/upload/upload.module:249
+msgid ""
+"Please visit the <a href=\"@admin-file-system\">file system configuration "
+"page</a>."
+msgstr ""
+"Visita la <a href=\"@admin-file-system\">pagina di configurazione del file "
+"system</a>."
+
+#: modules/upload/upload.module:252
+msgid "Please contact the site administrator."
+msgstr "Contatta l'amministratore del sito."
+
+#: modules/upload/upload.module:344
+msgid "Attachment"
+msgstr "Allegato"
+
+#: modules/upload/upload.module:344,517
+msgid "Size"
+msgstr "Dimensione"
+
+#: modules/upload/upload.module:491
+msgid "Attach new file"
+msgstr "Allega nuovo file"
+
+#: modules/upload/upload.module:497
+msgid "Attach"
+msgstr "Allega"
+
+#: modules/upload/upload.module:65,309
+msgid "1 attachment"
+msgid_plural "@count attachments"
+msgstr[0] "1 allegato"
+msgstr[1] "@count allegati"
+
+#: modules/upload/upload.module:46
+msgid "upload files"
+msgstr "carica file"
+
+#: modules/upload/upload.module:46
+msgid "view uploaded files"
+msgstr "vedi i file caricati"
+
+#: modules/upload/upload.admin.inc:73
+msgid ""
+"The maximum allowed image size (e.g. 640x480). Set to 0 for no restriction. "
+"If an <a href=\"!image-toolkit-link\">image toolkit</a> is installed, files "
+"exceeding this value will be scaled down to fit."
+msgstr ""
+"La risoluzione massima consentita per le immagini (es. 640x480). Impostando "
+"0 non vi saranno restrizioni. Se un <a href=\"!image-toolkit-link\">toolkit "
+"per le immagini</a> è installato, le immagini che superano tale valore "
+"verranno automaticamente ridimensionate."
+
+#: modules/upload/upload.admin.inc:81
+msgid "Display attached files when viewing a post."
+msgstr "Mostra i file allegati quando visualizzi un contenuto."
+
+#: modules/upload/upload.admin.inc:97
+msgid ""
+"The default maximum file size a user can upload. If an image is uploaded and "
+"a maximum resolution is set, the size will be checked after the file has "
+"been resized."
+msgstr ""
+"La dimensione massima predefinita di un file che un utente può inviare. Se "
+"viene inviata un'immagine e la risoluzione massima è impostata, la "
+"dimensione del file verrà controllata dopo il ridimensionamento."
+
+#: modules/upload/upload.admin.inc:135
+msgid ""
+"The maximum size of a file a user can upload. If an image is uploaded and a "
+"maximum resolution is set, the size will be checked after the file has been "
+"resized."
+msgstr ""
+"La dimensione massima di un file che un utente può inviare. Se viene inviata "
+"un immagine e la risoluzione massima è impostata, la dimensione del file "
+"verrà controllata dopo il ridimensionamento."
+
+#: modules/upload/upload.admin.inc:144
+msgid "The maximum size of all files a user can have on the site."
+msgstr ""
+"La dimensione massima di tutti i file che un utente può avere sul sito."
+
+#: modules/upload/upload.module:16
+msgid ""
+"The upload module allows users to upload files to the site. The ability to "
+"upload files is important for members of a community who want to share work. "
+"It is also useful to administrators who want to keep uploaded files "
+"connected to posts."
+msgstr ""
+"Il modulo 'upload' permette agli utenti di caricare file sul sito. L'abilità "
+"di caricare file è importante per i membri di una community che vogliono "
+"condividere il lavoro. È utile anche agli amministratori che vogliono "
+"mantenere i file caricati collegati ai contenuti."
+
+#: modules/upload/upload.module:17
+msgid ""
+"Users with the upload files permission can upload attachments to posts. "
+"Uploads may be enabled for specific content types on the content types "
+"settings page. Each user role can be customized to limit or control the file "
+"size of uploads, or the maximum dimension of image files."
+msgstr ""
+"Gli utenti con il permesso di caricare file possono caricare allegati ai "
+"contenuti. Il caricamento può essere abilitato per specifici tipi di "
+"contenuto nella pagina di amministrazione dei tipi di contenuto. Ogni ruolo "
+"può essere configurato per limitare o controllare la dimensione dei file da "
+"caricare, o la massima dimensione dei file contenenti immagini."
+
+#: modules/upload/upload.module:18
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@upload"
+"\">Upload module</a>."
+msgstr ""
+"Per maggiori informazioni consulta il manuale on-line per il <a href="
+"\"@upload\">modulo 'upload'</a>."
+
+#: modules/upload/upload.module:493
+msgid "Images are larger than %resolution will be resized. "
+msgstr "Le immagini più grandi di %resolution saranno ridimensionate. "
+
+#: modules/upload/upload.module:493
+msgid ""
+"The maximum upload size is %filesize. Only files with the following "
+"extensions may be uploaded: %extensions. "
+msgstr ""
+"La dimensione massima dei file è %filesize. Solo i file con le seguenti "
+"estensioni possono essere caricati: %extensions. "
+
+#: modules/upload/upload.module:502
+msgid "Please wait..."
+msgstr "Attendere prego..."
+
+#: modules/upload/upload.admin.inc:18
+msgid ""
+"Depending on your server environment, these settings may be changed in the "
+"system-wide php.ini file, a php.ini file in your Drupal root directory, in "
+"your Drupal site's settings.php file, or in the .htaccess file in your "
+"Drupal root directory."
+msgstr ""
+"A seconda della configurazione del tuo server, queste impostazioni "
+"potrebbero essere cambiate nel file php.ini che interessa tutto il sistema, "
+"in un file php.ini contenuto nella cartella principale di Drupal, nel file "
+"settings.php del tuo sito Drupal o nel file .htaccess nella cartella "
+"principale di Drupal."

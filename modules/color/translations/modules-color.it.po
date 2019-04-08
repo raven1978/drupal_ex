@@ -1,0 +1,146 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from files:
+#  color.module,v 1.39.2.2 2009/05/16 16:09:21 dries
+#  color.install,v 1.2 2006/12/05 05:49:50 dries
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2009-07-21 14:18+0200\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/color/color.module:43
+msgid "Color scheme"
+msgstr "Schema colori"
+
+#: modules/color/color.module:171
+msgid "Custom"
+msgstr "Personalizza"
+
+#: modules/color/color.module:174
+msgid "Color set"
+msgstr "Combinazione di colori"
+
+#: modules/color/color.module:182
+msgid "Base color"
+msgstr "Colore di base"
+
+#: modules/color/color.module:183
+msgid "Link color"
+msgstr "Colore collegamenti"
+
+#: modules/color/color.module:184
+msgid "Header top"
+msgstr "Testata superiore"
+
+#: modules/color/color.module:185
+msgid "Header bottom"
+msgstr "Testata inferiore"
+
+#: modules/color/color.module:186
+msgid "Text color"
+msgstr "Colore testo"
+
+#: modules/color/color.module:271
+msgid ""
+"There is not enough memory available to PHP to change this theme's color "
+"scheme. You need at least %size more. Check the <a href=\"@url\">PHP "
+"documentation</a> for more information."
+msgstr ""
+"Non è disponibile abbastanza memoria PHP per modificare lo schema colori di "
+"questo tema. Ti servono almeno %size in più. Guarda la <a href=\"@url"
+"\">documentazione PHP</a> per ulteriori informazioni."
+
+#: modules/color/color.install:26
+msgid "Not installed"
+msgstr "Non installato"
+
+#: modules/color/color.install:28
+msgid ""
+"The GD library for PHP is missing or outdated. Please check the <a href="
+"\"@url\">PHP image documentation</a> for information on how to correct this."
+msgstr ""
+"La libreria GD per PHP è mancante o datata. Controlla la <a href=\"@url"
+"\">Documentazione immagini per PHP</a> per ulteriori informazioni sulla "
+"correzione del problema."
+
+#: modules/color/color.install:31
+msgid "GD library"
+msgstr "Libreria GD"
+
+#: modules/color/color.install:21
+msgid ""
+"The GD library for PHP is enabled, but was compiled without PNG support. "
+"Please check the <a href=\"@url\">PHP image documentation</a> for "
+"information on how to correct this."
+msgstr ""
+"La libreria GD per PHP è attiva, ma è stata compilata senza il supporto PNG. "
+"Controlla la <a href=\"@url\">Documentazione immagini per PHP</a> per "
+"ulteriori informazioni sulla correzione del problema."
+
+#: modules/color/color.module:10
+msgid ""
+"The color module allows a site administrator to quickly and easily change "
+"the color scheme of certain themes. Although not all themes support color "
+"module, both Garland (the default theme) and Minnelli were designed to take "
+"advantage of its features. By using color module with a compatible theme, "
+"you can easily change the color of links, backgrounds, text, and other theme "
+"elements. Color module requires that your <a href=\"@url\">file download "
+"method</a> be set to public."
+msgstr ""
+"Il modulo 'color' permette ad un amministratore del sito di cambiare lo "
+"schema di colori di alcuni temi in maniera veloce e semplice. Tuttavia non "
+"tutti i temi supportano il modulo 'color', sia Garland (il tema predefinito) "
+"che Minnelli sono stati progettati per trarre vantaggio dalle sue funzioni. "
+"Usando il modulo 'color' con un tema compatibile, si può facilmente cambiare "
+"il colore dei link, gli sfondi, il testo, e altri elementi del tema. Il "
+"modulo 'color' richiede che il <a href=\"@url\">metodo per il download dei "
+"documenti</a> sia pubblico."
+
+#: modules/color/color.module:11
+msgid ""
+"It is important to remember that color module saves a modified copy of the "
+"theme's specified stylesheets in the files directory. This means that if you "
+"make any manual changes to your theme's stylesheet, you must save your color "
+"settings again, even if they haven't changed. This causes the color module "
+"generated version of the stylesheets in the files directory to be recreated "
+"using the new version of the original file."
+msgstr ""
+"E' importante ricordare che il modulo 'color' salva una copia modificata dei "
+"fogli di stile di un tema nella directory dei file. Questo vuol dire che se "
+"fai un qualsiasi cambiamento manuale al foglio di stile del tuo tema, devi "
+"salvare di nuovo le tue impostazioni sul colore, anche se non sono state "
+"cambiate. In questo modo la versione dei fogli di stile generata dal modulo "
+"colore viene ricreata usando la nuova versione del file originale."
+
+#: modules/color/color.module:12
+msgid ""
+"To change the color settings for a compatible theme, select the \"configure"
+"\" link for the theme on the <a href=\"@themes\">themes administration page</"
+"a>."
+msgstr ""
+"Per modificare le impostazioni colore su un tema compatibile, selezionate il "
+"link \"configurazione\" per il tema nella <a href=\"@themes\">pagina "
+"amministrazione temi</a>."
+
+#: modules/color/color.module:13
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@color"
+"\">Color module</a>."
+msgstr ""
+"Per maggiori informazioni consulta il manuale on-line per il <a href=\"@color"
+"\">modulo 'color'</a>."
+
+#: modules/color/color.module:38
+msgid ""
+"The color picker only works if the <a href=\"@url\">download method</a> is "
+"set to public."
+msgstr ""
+"Il <em>color picker<em> funziona solo se il <a href=\"@url\">metodo di "
+"download</a> è configurato a pubblico."

@@ -1,0 +1,415 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from files:
+#  block-admin-display-form.tpl.php,v 1.3 2008/01/16 22:57:26 goba
+#  block.module,v 1.299.2.3 2008/06/24 14:40:08 goba
+#  block.admin.inc,v 1.14.2.5 2008/11/24 06:00:02 dries
+#  block.js,v 1.2 2007/12/16 10:36:53 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2008-11-18 00:23+0100\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/block/block-admin-display-form.tpl.php:42
+msgid "Region"
+msgstr "Settore"
+
+#: modules/block/block.module:121
+msgid "Blocks"
+msgstr "Blocchi"
+
+#: modules/block/block.module:122
+msgid ""
+"Configure what block content appears in your site's sidebars and other "
+"regions."
+msgstr ""
+"Configura quale contenuto dei blocchi appare nelle barre laterali e in altri "
+"settori del tuo sito."
+
+#: modules/block/block.module:140
+msgid "Configure block"
+msgstr "Configura blocco"
+
+#: modules/block/block.module:148
+msgid "Delete block"
+msgstr "Elimina blocco"
+
+#: modules/block/block.module:156
+msgid "Add block"
+msgstr "Aggiungi blocco"
+
+#: modules/block/block.admin.inc:91
+msgid "Save blocks"
+msgstr "Salva blocchi"
+
+#: modules/block/block.admin.inc:106
+msgid "The block settings have been updated."
+msgstr "Le impostazioni del blocco sono state aggiornate."
+
+#: modules/block/block.admin.inc:156
+msgid "Block specific settings"
+msgstr "Impostazioni specifiche blocco"
+
+#: modules/block/block.admin.inc:161
+msgid "Block title"
+msgstr "Titolo blocco"
+
+#: modules/block/block.admin.inc:163
+msgid "The title of the block as shown to the user."
+msgstr "Il titolo del blocco, come visto dall'utente."
+
+#: modules/block/block.admin.inc:163
+msgid ""
+"Override the default title for the block. Use <em>&lt;none&gt;</em> to "
+"display no title, or leave blank to use the default block title."
+msgstr ""
+"Sovrascrive il titolo predefinito di questo blocco. Usa <em>&lt;none&gt;</"
+"em> per non visualizzare alcun titolo, o lascia vuoto per usare il titolo "
+"predefinito del blocco."
+
+#: modules/block/block.admin.inc:179
+msgid "'%name' block"
+msgstr "blocco '%name'"
+
+#: modules/block/block.admin.inc:185
+msgid "User specific visibility settings"
+msgstr "Impostazioni specifiche di visibilità per utente"
+
+#: modules/block/block.admin.inc:190
+msgid "Custom visibility settings"
+msgstr "Impostazioni di visibilità personalizzate."
+
+#: modules/block/block.admin.inc:192
+msgid "Users cannot control whether or not they see this block."
+msgstr "Gli utenti non possono controllare se vedere o no questo blocco."
+
+#: modules/block/block.admin.inc:193
+msgid "Show this block by default, but let individual users hide it."
+msgstr ""
+"Mostra questo blocco di default, ma consente ai singoli utenti di "
+"nasconderlo."
+
+#: modules/block/block.admin.inc:194
+msgid "Hide this block by default but let individual users show it."
+msgstr ""
+"Nasconde questo blocco di default ma consente ai singoli utenti di mostrarlo."
+
+#: modules/block/block.admin.inc:196
+msgid ""
+"Allow individual users to customize the visibility of this block in their "
+"account settings."
+msgstr ""
+"Consente ai singoli utenti di personalizzare la visibilità di questo blocco "
+"nelle proprie impostazioni account."
+
+#: modules/block/block.admin.inc:213
+msgid "Role specific visibility settings"
+msgstr "Impostazioni specifiche di visibilità per ruolo"
+
+#: modules/block/block.admin.inc:218
+msgid "Show block for specific roles"
+msgstr "Mostra blocco a ruoli specifici"
+
+#: modules/block/block.admin.inc:221
+msgid ""
+"Show this block only for the selected role(s). If you select no roles, the "
+"block will be visible to all users."
+msgstr ""
+"Mostra questo blocco solo ai ruoli selezionati. Se non selezioni alcun "
+"ruolo, il blocco sarà visibile a tutti gli utenti."
+
+#: modules/block/block.admin.inc:226
+msgid "Page specific visibility settings"
+msgstr "Impostazioni specifiche di visibilità per pagina"
+
+#: modules/block/block.admin.inc:237
+msgid "Show on every page except the listed pages."
+msgstr "Mostra su ogni pagina eccetto quelle elencate."
+
+#: modules/block/block.admin.inc:237
+msgid "Show on only the listed pages."
+msgstr "Mostra solo sulle pagine elencate."
+
+#: modules/block/block.admin.inc:238
+msgid ""
+"Enter one page per line as Drupal paths. The '*' character is a wildcard. "
+"Example paths are %blog for the blog page and %blog-wildcard for every "
+"personal blog. %front is the front page."
+msgstr ""
+"Inserisci una pagina per linea come percorsi di Drupal. Il carattere '*' è "
+"un jolly. Percorsi di esempio sono %blog per la pagina blog e %blog-jolly "
+"per ogni blog personale. %front è la prima pagina (front page)."
+
+#: modules/block/block.admin.inc:241
+msgid ""
+"Show if the following PHP code returns <code>TRUE</code> (PHP-mode, experts "
+"only)."
+msgstr ""
+"Mostra se il seguente codice PHP restituisce <code>TRUE</code> (modalità "
+"PHP, solo esperti)."
+
+#: modules/block/block.admin.inc:242
+msgid ""
+"If the PHP-mode is chosen, enter PHP code between %php. Note that executing "
+"incorrect PHP-code can break your Drupal site."
+msgstr ""
+"Se viene scelta la modalità PHP, inserisci codice PHP tra %php. Tieni "
+"presente che eseguire codice PHP non corretto può danneggiare il tuo sito "
+"Drupal."
+
+#: modules/block/block.admin.inc:246
+msgid "Show block on specific pages"
+msgstr "Mostra il blocco su pagine specifiche"
+
+#: modules/block/block.admin.inc:252
+msgid "Pages"
+msgstr "Pagine"
+
+#: modules/block/block.admin.inc:260
+msgid "Save block"
+msgstr "Salva blocco"
+
+#: modules/block/block.admin.inc:298,269
+msgid "Please ensure that each block description is unique."
+msgstr "Per favore assicurati che ogni descrizione del blocco sia univoca."
+
+#: modules/block/block.admin.inc:282
+msgid "The block configuration has been saved."
+msgstr "La configurazione del blocco è stata salvata."
+
+#: modules/block/block.admin.inc:319
+msgid "The block has been created."
+msgstr "Il blocco è stato creato."
+
+#: modules/block/block.admin.inc:334
+msgid "Are you sure you want to delete the block %name?"
+msgstr "Sei sicuro di voler eliminare il blocco %name?"
+
+#: modules/block/block.admin.inc:343
+msgid "The block %name has been removed."
+msgstr "Il blocco %name è stato rimosso."
+
+#: modules/block/block.module:315
+msgid "Block description"
+msgstr "Descrizione del blocco"
+
+#: modules/block/block.module:318
+msgid ""
+"A brief description of your block. Used on the <a href=\"@overview\">block "
+"overview page</a>."
+msgstr ""
+"Una breve descrizione del tuo blocco. Usato nella <a href=\"@overview"
+"\">pagina di riepilogo dei blocchi</a>."
+
+#: modules/block/block.module:325
+msgid "Block body"
+msgstr "Corpo del blocco"
+
+#: modules/block/block.module:328
+msgid "The content of the block as shown to the user."
+msgstr "Il contenuto di un blocco come mostrato all'utente."
+
+#: modules/block/block.module:361
+msgid "Block configuration"
+msgstr "Configurazione blocchi"
+
+#: modules/block/block.module:113
+msgid "administer blocks"
+msgstr "amministra blocchi"
+
+#: modules/block/block.module:113
+msgid "use PHP for block visibility"
+msgstr "usa PHP per la visibilità dei blocchi"
+
+#: modules/block/block-admin-display-form.tpl.php:57
+msgid "No blocks in this region"
+msgstr "Nessun blocco in questa regione"
+
+#: modules/block/block.module:70
+msgid ""
+"Blocks are boxes of content rendered into an area, or region, of a web page. "
+"The default theme Garland, for example, implements the regions \"left sidebar"
+"\", \"right sidebar\", \"content\", \"header\", and \"footer\", and a block "
+"may appear in any one of these areas. The <a href=\"@blocks\">blocks "
+"administration page</a> provides a drag-and-drop interface for assigning a "
+"block to a region, and for controlling the order of blocks within regions."
+msgstr ""
+"I blocchi sono contenitori che vengono mostrati in un'area o regione di una "
+"pagina web. Il tema predefinito Garland, ad esempio, implementa le regioni "
+"\"left sidebar\" (barra laterale sx), \"right sidebar\" (barra laterale dx), "
+"\"content\" (contenuto), \"header\" (intestazione) e \"footer\" (piè di "
+"pagina), ed un blocco può comparire in ciascuna di queste aree. La <a href="
+"\"@blocks\">pagina amministrazione blocchi</a> fornisce un'interfaccia drag-"
+"and-drop per assegnare un blocco ad una area e per controllare l'ordine dei "
+"blocchi nelle aree."
+
+#: modules/block/block.module:71
+msgid ""
+"Although blocks are usually generated automatically by modules (like the "
+"<em>User login</em> block, for example), administrators can also define "
+"custom blocks. Custom blocks have a title, description, and body. The body "
+"of the block can be as long as necessary, and can contain content supported "
+"by any available <a href=\"@input-format\">input format</a>."
+msgstr ""
+"Sebbene i blocchi sono di solito generati automaticamente dai moduli (come "
+"il blocco <em>Login utente</em>, per esempio), gli amministratori possono "
+"anche definire dei blocchi custom (personalizzati). I blocchi personalizzati "
+"hanno un titolo, una descrizione ed un corpo. Il corpo del blocco può essere "
+"grande quanto si vuole, e può contenere contenuti di qualsiasi <a href="
+"\"@input-format\">formato di input</a> disponibile."
+
+#: modules/block/block.module:72
+msgid "When working with blocks, remember that:"
+msgstr "Quando lavori con i blocchi, ricorda che:"
+
+#: modules/block/block.module:73
+msgid ""
+"since not all themes implement the same regions, or display regions in the "
+"same way, blocks are positioned on a per-theme basis."
+msgstr ""
+"dato che non tutti i temi implementano le stesse zone, o mostrano le zone "
+"nello stesso modo, i blocchi sono posizionati in base al tema stesso."
+
+#: modules/block/block.module:74
+msgid "disabled blocks, or blocks not in a region, are never shown."
+msgstr ""
+"i blocchi disabilitati o i blocchi che non sono in una regione, non saranno "
+"mai visualizzati."
+
+#: modules/block/block.module:75
+msgid ""
+"when throttle module is enabled, throttled blocks (blocks with the "
+"<em>Throttle</em> checkbox selected) are hidden during high server loads."
+msgstr ""
+"quando il modulo 'throttle' è abilitato, i blocchi 'accelerati' (i blocchi "
+"con la casella <em>Throttle</em> selezionata) verranno nascosti se il server "
+"è sottoposto a un forte carico di lavoro."
+
+#: modules/block/block.module:76
+msgid "blocks can be configured to be visible only on certain pages."
+msgstr ""
+"i blocchi possono essere configurati per essere visibili solo in determinate "
+"pagine."
+
+#: modules/block/block.module:77
+msgid ""
+"blocks can be configured to be visible only when specific conditions are "
+"true."
+msgstr ""
+"i blocchi possono essere configurati per essere visibili solo quando "
+"determinate condizioni sono vere."
+
+#: modules/block/block.module:78
+msgid "blocks can be configured to be visible only for certain user roles."
+msgstr ""
+"i blocchi possono essere configurati per essere visibili solo a determinati "
+"ruoli utente."
+
+#: modules/block/block.module:79
+msgid ""
+"when allowed by an administrator, specific blocks may be enabled or disabled "
+"on a per-user basis using the <em>My account</em> page."
+msgstr ""
+"quando un amministratore lo permette, alcuni blocchi specifici possono "
+"essere abilitati o disabilitati dall'utente stesso utlizzando la pagina "
+"<em>Profilo utente</em>."
+
+#: modules/block/block.module:80
+msgid ""
+"some dynamic blocks, such as those generated by modules, will be displayed "
+"only on certain pages."
+msgstr ""
+"alcuni blocchi dinamici, come quelli generati dai moduli, saranno "
+"visualizzati solo in determinate pagine."
+
+#: modules/block/block.module:81
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@block"
+"\">Block module</a>."
+msgstr ""
+"Per maggiori informazioni consulta il manuale on-line per il <a href=\"@block"
+"\">modulo 'block'</a>."
+
+#: modules/block/block.module:85
+msgid ""
+"This page provides a drag-and-drop interface for assigning a block to a "
+"region, and for controlling the order of blocks within regions. To change "
+"the region or order of a block, grab a drag-and-drop handle under the "
+"<em>Block</em> column and drag the block to a new location in the list. "
+"(Grab a handle by clicking and holding the mouse while hovering over a "
+"handle icon.) Since not all themes implement the same regions, or display "
+"regions in the same way, blocks are positioned on a per-theme basis. "
+"Remember that your changes will not be saved until you click the <em>Save "
+"blocks</em> button at the bottom of the page."
+msgstr ""
+"Questa pagina provvede un'interfaccia drag-and-drop per poter assegnare un "
+"blocco ad una regione, e per controllare l'ordine dei blocchi all'interno "
+"delle regioni. Per cambiare una regione o l'ordine di un blocco, prendere "
+"una maniglia nella colonna <em>Blocco</em> e trascinare il blocco in una "
+"nuova posizione nella lista. (Afferrare una maniglia facendo clic e tenendo "
+"premuto il mouse mentre ci si muove tra le icone.) Poiché non tutti i temi "
+"implementano le stesse regioni, o visualizzano le regioni nello stesso modo, "
+"i blocchi sono posizionati in base al tema. Ricorda che i cambiamenti non "
+"sono salvati affinché non si clicca il pulsante <em>Salva blocchi</em> in "
+"fondo alla pagina."
+
+#: modules/block/block.module:87
+msgid ""
+"To reduce CPU usage, database traffic or bandwidth, blocks may be "
+"automatically disabled during high server loads by selecting their "
+"<em>Throttle</em> checkbox. Adjust throttle thresholds on the <a href="
+"\"@throttleconfig\">throttle configuration page</a>."
+msgstr ""
+"Per ridurre l'uso della CPU, il traffico del database o la banda utilizzata, "
+"i blocchi potranno essere disabilitati durante i momenti di maggior carico "
+"del server  spuntando le apposite caselle del  <em>limitatore</em>. "
+"Configura le soglie del limitatore nella  <a href=\"@throttleconfig\">pagina "
+"di configurazione del limitatore</a>."
+
+#: modules/block/block.module:89
+msgid ""
+"Click the <em>configure</em> link next to each block to configure its "
+"specific title and visibility settings. Use the <a href=\"@add-block\">add "
+"block page</a> to create a custom block."
+msgstr ""
+"Clicca sul link <em>configura</em> posto a fianco di ciascun blocco per "
+"modificarne il titoli e le impostazioni di visibilità. Usa <a href=\"@add-"
+"block\">aggiungi blocco di contenuto</a> per creare un blocco personalizzato."
+
+#: modules/block/block.module:92
+msgid ""
+"Use this page to create a new custom block. New blocks are disabled by "
+"default, and must be moved to a region on the <a href=\"@blocks\">blocks "
+"administration page</a> to be visible."
+msgstr ""
+"Usa questa pagina per creare un nuovo blocco personalizzato. I nuovi blocchi "
+"sono disabilitati per default e devono essere collocati in una regione nella "
+"pagina <a href=\"@blocks\">amministrazione  blocchi</a> per diventare "
+"visibili."
+
+#: modules/block/block.module:133
+msgid "JavaScript List Form"
+msgstr "Modulo lista JavaScript"
+
+#: modules/block/block.js:0
+msgid ""
+"The changes to these blocks will not be saved until the <em>Save blocks</em> "
+"button is clicked."
+msgstr ""
+"I cambiamenti a questi blocchi non saranno salvati finché il bottone "
+"<em>Salva blocchi</em> è cliccato."
+
+#: modules/block/block.module:276
+msgid ""
+"The block %info was assigned to the invalid region %region and has been "
+"disabled."
+msgstr ""
+"Il blocco %info è stato assegnato ad una regione (%region) non valida ed è "
+"stato disabilitato."

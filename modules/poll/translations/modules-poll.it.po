@@ -1,0 +1,230 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from files:
+#  poll.module,v 1.263.2.3 2008/12/18 15:46:20 dries
+#  poll.pages.inc,v 1.4 2007/12/14 09:50:41 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2008-11-18 00:29+0100\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/poll/poll.module:133
+msgid "Most recent poll"
+msgstr "Sondaggi più recenti"
+
+#: modules/poll/poll.module:380
+msgid "Negative values are not allowed."
+msgstr "I valori negativi non sono permessi."
+
+#: modules/poll/poll.module:385
+msgid "You must fill in at least two choices."
+msgstr "Devi effettuare almeno due scelte."
+
+#: modules/poll/poll.module:307
+msgid "Choice @n"
+msgstr "Scelta @n"
+
+#: modules/poll/poll.module:315
+msgid "Votes for choice @n"
+msgstr "Voti per la scelta @n"
+
+#: modules/poll/poll.module:251
+msgid "Closed"
+msgstr "Chiuso"
+
+#: modules/poll/poll.module:263
+msgid "Poll status"
+msgstr "Stato del sondaggio"
+
+#: modules/poll/poll.module:266
+msgid "When a poll is closed, visitors can no longer vote for it."
+msgstr ""
+"Quando un sondaggio è chiuso, i visitatori non possono più votare per esso."
+
+#: modules/poll/poll.module:271
+msgid "Poll duration"
+msgstr "Durata del sondaggio"
+
+#: modules/poll/poll.module:274
+msgid "After this period, the poll will be closed automatically."
+msgstr "Dopo questo periodo, il sondaggio verrà chiuso automaticamente."
+
+#: modules/poll/poll.module:79
+msgid "Polls"
+msgstr "Sondaggi"
+
+#: modules/poll/poll.module:87
+msgid "Votes"
+msgstr "Voti"
+
+#: modules/poll/poll.module:98,508
+msgid "Results"
+msgstr "Risultati"
+
+#: modules/poll/poll.module:175
+msgid "Question"
+msgstr "Domanda"
+
+#: modules/poll/poll.pages.inc:20
+msgid "open"
+msgstr "aperto"
+
+#: modules/poll/poll.pages.inc:20
+msgid "closed"
+msgstr "chiuso"
+
+#: modules/poll/poll.module:754
+msgid "Cancel your vote"
+msgstr "Cancella il tuo voto"
+
+#: modules/poll/poll.module:611
+msgid "Your vote was recorded."
+msgstr "Il tuo voto è stato registrato."
+
+#: modules/poll/poll.module:506
+msgid "Older polls"
+msgstr "I vecchi sondaggi"
+
+#: modules/poll/poll.module:506
+msgid "View the list of polls on this site."
+msgstr "Vedi la lista dei sondaggi di questo sito."
+
+#: modules/poll/poll.module:508
+msgid "View the current poll results."
+msgstr "Vedi i risultati dei sondaggi correnti."
+
+#: modules/poll/poll.module:57
+msgid "vote on polls"
+msgstr "vota i sondaggi"
+
+#: modules/poll/poll.module:57
+msgid "cancel own vote"
+msgstr "cancella il proprio voto"
+
+#: modules/poll/poll.module:57
+msgid "inspect all votes"
+msgstr "verifica tutti i voti"
+
+#: modules/poll/poll.pages.inc:32
+msgid ""
+"This table lists all the recorded votes for this poll. If anonymous users "
+"are allowed to vote, they will be identified by the IP address of the "
+"computer they used when they voted."
+msgstr ""
+"Questa tabella elenca tutti i voti registrati per questo sondaggio. Se è "
+"permesso il voto agli utenti anonimi essi verranno identificati tramite "
+"l'indirizzo IP del computer utilizzato per votare."
+
+#: modules/poll/poll.module:16
+msgid ""
+"The poll module can be used to create simple polls for site users. A poll is "
+"a simple, multiple choice questionnaire which displays the cumulative "
+"results of the answers to the poll. Having polls on the site is a good way "
+"to receive feedback from community members."
+msgstr ""
+"Il modulo per sondaggi può essere usato per creare semplici sondaggi "
+"indirizzati agli utenti del sito. Un sondaggio è un semplice questionario a "
+"risposta multipla che mostra le risposte degli utenti all'indagine. Avere un "
+"sondaggio sul proprio sito è un buon metodo per ricevere feedback dai membri "
+"della comunità."
+
+#: modules/poll/poll.module:17
+msgid ""
+"When creating a poll, enter the question being posed, as well as the "
+"potential choices (and beginning vote counts for each choice). The status "
+"and duration (length of time the poll remains active for new votes) can also "
+"be specified. Use the <a href=\"@poll\">poll</a> menu item to view all "
+"current polls. To vote in or view the results of a specific poll, click on "
+"the poll itself."
+msgstr ""
+"Quando si crea un sondaggio, inserire la domanda che è stata posta, così "
+"come le potenziali scelte (e iniziando a conteggiare i voti per ogni "
+"scelta). Si può anche specificare lo stato e la durata (periodo di tempo in "
+"cui il sondaggio rimane attivo per nuovi voti). Utilizzare la voce del menu "
+"<a href=\"@poll\">sondaggio</a> per visualizzare tutti gli attuali sondaggi. "
+"Per votare o visualizzare i risultati di uno specifico sondaggio, fare clic "
+"sul sondaggio stesso."
+
+#: modules/poll/poll.module:18
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@poll"
+"\">Poll module</a>."
+msgstr ""
+"Per maggiori informazioni consulta il manuale on-line per il <a href=\"@poll"
+"\">modulo 'poll'</a>."
+
+#: modules/poll/poll.module:174
+msgid ""
+"A <em>poll</em> is a question with a set of possible responses. A <em>poll</"
+"em>, once created, automatically provides a simple running count of the "
+"number of votes received for each response."
+msgstr ""
+"Un <em>sondaggio</em> è una domanda con una serie di possibili risposte. Un "
+"<em>sondaggio</em>, una volta creato, fornisce automaticamente il conteggio "
+"del numero di voti ricevuti per ogni risposta."
+
+#: modules/poll/poll.module:237
+msgid "More choices"
+msgstr "Aggiungi altre scelte"
+
+#: modules/poll/poll.module:238
+msgid ""
+"If the amount of boxes above isn't enough, click here to add more choices."
+msgstr ""
+"Se la quantità di caselle sopra non è sufficiente, clicca qui per aggiungere "
+"ulteriori scelte."
+
+#: modules/poll/poll.module:257
+msgid "Poll settings"
+msgstr "Impostazioni del sondaggio"
+
+#: modules/poll/poll.module:667
+msgid "Add another choice"
+msgstr "Aggiungi un'altra scelta"
+
+#: modules/poll/poll.module:671
+msgid "Choice"
+msgstr "Scelta"
+
+#: modules/poll/poll.module:672
+msgid "Vote count"
+msgstr "Conteggio voti"
+
+#: modules/poll/poll.module:57
+msgid "create poll content"
+msgstr "crea sondaggio"
+
+#: modules/poll/poll.module:57
+msgid "edit any poll content"
+msgstr "modifica il contenuto dei sondaggi"
+
+#: modules/poll/poll.module:57
+msgid "edit own poll content"
+msgstr "modifica il contenuto del proprio sondaggio"
+
+#: modules/poll/poll.module:109
+msgid "Javascript Choice Form"
+msgstr "Form di scelta javascript"
+
+#: modules/poll/poll.module:588
+msgid ""
+"Your vote could not be recorded because you did not select any of the "
+"choices."
+msgstr ""
+"Il tuo voto non può essere registrato perché non hai selezionato nessuna "
+"delle risposte."
+
+#: modules/poll/poll.module:57
+msgid "delete own poll content"
+msgstr "elimina il contenuto del proprio sondaggio"
+
+#: modules/poll/poll.module:57
+msgid "delete any poll content"
+msgstr "elimina il contenuto dei sondaggi"

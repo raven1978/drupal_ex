@@ -1,0 +1,173 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from files:
+#  trigger.admin.inc,v 1.5 2008/01/08 10:35:43 goba
+#  trigger.module,v 1.13.2.3 2009/06/08 16:34:57 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2009-08-13 11:18+0200\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/trigger/trigger.admin.inc:238
+msgid "Operation"
+msgstr "Operazione"
+
+#: modules/trigger/trigger.admin.inc:74
+msgid "Are you sure you want to unassign the action %title?"
+msgstr "Sei sicuro di rimuovere l'associazione con l'azione %title?"
+
+#: modules/trigger/trigger.admin.inc:76
+msgid "You can assign it again later if you wish."
+msgstr "Puoi anche associarla dopo, se preferisci."
+
+#: modules/trigger/trigger.admin.inc:88,87
+msgid "Action %action has been unassigned."
+msgstr "L'azione %action non è più associata."
+
+#: modules/trigger/trigger.admin.inc:144
+msgid "Trigger: "
+msgstr "Trigger: "
+
+#: modules/trigger/trigger.admin.inc:154
+msgid "unassign"
+msgstr "rimuovi associazione"
+
+#: modules/trigger/trigger.admin.inc:171
+msgid "Assign"
+msgstr "Associa"
+
+#: modules/trigger/trigger.admin.inc:176
+msgid "No available actions for this trigger."
+msgstr "Azioni non disponibili per questo trigger."
+
+#: modules/trigger/trigger.admin.inc:218
+msgid ""
+"You have added an action that changes a the property of a post. A Save post "
+"action has been added so that the property change will be saved."
+msgstr ""
+"E' stata aggiunta un azione che cambia le proprietà di un contenuto. E' "
+"stata aggiunta un'azione «Salva contenuto» affinché le modifiche alle "
+"proprietà siano salvate."
+
+#: modules/trigger/trigger.module:14
+msgid ""
+"Triggers are system events, such as when new content is added or when a user "
+"logs in. Trigger module combines these triggers with actions (functional "
+"tasks), such as unpublishing content or e-mailing an administrator. The <a "
+"href=\"@url\">Actions settings page</a> contains a list of existing actions "
+"and provides the ability to create and configure additional actions."
+msgstr ""
+"I trigger sono eventi di sistema, come quando un nuovo contenuto è aggiunto "
+"o un utente effettua l'accesso. Il modulo trigger associa questi eventi con "
+"azioni (task funzionali), come la revoca di pubblicazione di un contenuto o "
+"l'invio di una e-mail a un amministratore. La <a href=\"@url\">pagina delle "
+"Azioni</a> contiene una lista di azioni esistenti e fornisce la possibilità "
+"di creare e configurare azioni aggiuntive."
+
+#: modules/trigger/trigger.module:17
+msgid ""
+"Below you can assign actions to run when certain comment-related triggers "
+"happen. For example, you could promote a post to the front page when a "
+"comment is added."
+msgstr ""
+"Qui di seguito puoi impostare azioni da eseguire quando si verificano "
+"determinati eventi relativi ai commenti. Per esempio, puoi promuovere un "
+"contenuto in prima pagina quando viene aggiunto un commento."
+
+#: modules/trigger/trigger.module:21
+msgid ""
+"Below you can assign actions to run during each pass of a <a href=\"@cron"
+"\">cron maintenance task</a>."
+msgstr ""
+"Qui di seguito puoi impostare azioni da eseguire durante ogni esecuzione del "
+"<a href=\"@cron\">processo cron di manutenzione</a>."
+
+#: modules/trigger/trigger.module:23
+msgid ""
+"Below you can assign actions to run when certain taxonomy-related triggers "
+"happen. For example, you could send an e-mail to an administrator when a "
+"term is deleted."
+msgstr ""
+"Qui di seguito puoi impostare azioni da eseguire quando si verificano "
+"determinati eventi relativi alla tassonomia. Per esempio, puoi inviare una e-"
+"mail a un amministratore quando un termine è eliminato."
+
+#: modules/trigger/trigger.module:25
+msgid ""
+"Below you can assign actions to run when certain user-related triggers "
+"happen. For example, you could send an e-mail to an administrator when a "
+"user account is deleted."
+msgstr ""
+"Qui di seguito puoi impostare azioni da eseguire quando si verificano "
+"determinati eventi relativi agli utenti. Per esempio, puoi inviare una e-"
+"mail a un amministratore quando viene eliminato un account."
+
+#: modules/trigger/trigger.module:27
+msgid ""
+"The Trigger module provides the ability to trigger <a href=\"@actions"
+"\">actions</a> upon system events, such as when new content is added or when "
+"a user logs in."
+msgstr ""
+"Il modulo 'Trigger' fornisce l'abilità di innescare <a href=\"@actions"
+"\">azioni</a> in base a eventi di sistema, come quando un nuovo contenuto è "
+"aggiunto o quando un utente effettua l'accesso."
+
+#: modules/trigger/trigger.module:28
+msgid ""
+"The combination of actions and triggers can perform many useful tasks, such "
+"as e-mailing an administrator if a user account is deleted, or automatically "
+"unpublishing comments that contain certain words. By default, there are five "
+"\"contexts\" of events (Comments, Content, Cron, Taxonomy, and Users), but "
+"more may be added by additional modules."
+msgstr ""
+"La combinazione di azioni e trigger può eseguire molti compiti utili, come "
+"mandare una e-mail ad un amministratore se un profilo utente viene "
+"cancellato, o rimuovere automaticamente commenti quando contengono certe "
+"parole. Ci sono cinque «contesti» predefiniti di eventi (Commenti, Contenuto, "
+"Cron, Tassonomia, e Utenti), ma possono esserne aggiunti altri da moduli "
+"addizionali."
+
+#: modules/trigger/trigger.module:29
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@trigger"
+"\">Trigger module</a>."
+msgstr ""
+"Per ulteriori informazioni consulta il manuale on-line per il <a href="
+"\"@trigger\">modulo 'Trigger'</a>."
+
+#: modules/trigger/trigger.module:39
+msgid "Triggers"
+msgstr "Trigger"
+
+#: modules/trigger/trigger.module:40
+msgid "Tell Drupal when to execute actions."
+msgstr "Comunica a Drupal quando eseguire le azioni."
+
+#: modules/trigger/trigger.module:85
+msgid "Cron"
+msgstr "Cron"
+
+#: modules/trigger/trigger.module:115
+msgid "Unassign an action from a trigger."
+msgstr "Elimina associazione tra azione e trigger."
+
+#: modules/trigger/trigger.admin.inc:192
+msgid "The action you chose is already assigned to that trigger."
+msgstr "L'azione che hai scelto è già stata associata a quel trigger."
+
+#: modules/trigger/trigger.module:19
+msgid ""
+"Below you can assign actions to run when certain content-related triggers "
+"happen. For example, you could send an e-mail to an administrator when a "
+"post is created or updated."
+msgstr ""
+"Qui di seguito puoi impostare azioni da eseguire quando si verificano "
+"determinati eventi relativi ai contenuti. Per esempio, puoi inviare una e-"
+"mail a un amministratore quando un contenuto viene creato o aggiornato."

@@ -1,0 +1,142 @@
+# Italian translation of drupal (6.13)
+# Copyright (c) 2009 by the Italian translation team
+# Generated from files:
+#  dblog.admin.inc,v 1.6.2.1 2008/09/17 05:47:53 goba
+#  dblog.module,v 1.21.2.2 2008/04/09 21:11:46 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-12-12 15:15+0100\n"
+"PO-Revision-Date: 2009-07-29 13:24+0200\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/dblog/dblog.admin.inc:150
+msgid "Location"
+msgstr "Percorso"
+
+#: modules/dblog/dblog.module:55
+msgid "Recent log entries"
+msgstr "Log recenti"
+
+#: modules/dblog/dblog.module:56
+msgid "View events that have recently been logged."
+msgstr "Visualizza gli eventi che sono stati recentemente registrati."
+
+#: modules/dblog/dblog.module:63
+msgid "Top 'page not found' errors"
+msgstr "Errori 'pagina non trovata' più frequenti"
+
+#: modules/dblog/dblog.module:64
+msgid "View 'page not found' errors (404s)."
+msgstr "Visualizza gli errori di 'pagina non trovata' (404)"
+
+#: modules/dblog/dblog.module:71
+msgid "Top 'access denied' errors"
+msgstr "Errori 'accesso negato' più frequenti"
+
+#: modules/dblog/dblog.module:72
+msgid "View 'access denied' errors (403s)."
+msgstr "Mostra gli errori  'accesso negato' (403)."
+
+#: modules/dblog/dblog.admin.inc:119,91
+msgid "No log messages available."
+msgstr "Nessun messaggio di log disponibile."
+
+#: modules/dblog/dblog.admin.inc:107
+msgid "Count"
+msgstr "Conteggio"
+
+#: modules/dblog/dblog.admin.inc:230,162
+msgid "Severity"
+msgstr "Rilevanza"
+
+#: modules/dblog/dblog.admin.inc:18
+msgid "Discard log entries above the following row limit"
+msgstr "Rimuovi le immissioni nel log oltre al seguente limite di riga"
+
+#: modules/dblog/dblog.admin.inc:21
+msgid ""
+"The maximum number of rows to keep in the database log. Older entries will "
+"be automatically discarded. (Requires a correctly configured <a href=\"@cron"
+"\">cron maintenance task</a>.)"
+msgstr ""
+"Il numero massimo di righe da tenere nel log su database. Gli eventi più "
+"vecchi verranno rimossi automaticamente. (Richiede un <a href=\"@cron"
+"\">processo di manutenzione del cron</a> correttamente configurato.)"
+
+#: modules/dblog/dblog.admin.inc:270
+msgid "Filter log messages"
+msgstr "Filtra messaggi di log"
+
+#: modules/dblog/dblog.admin.inc:307
+msgid "You must select something to filter by."
+msgstr "E' necessario selezionare qualcosa da filtrare."
+
+#: modules/dblog/dblog.module:21
+msgid ""
+"The dblog module monitors your system, capturing system events in a log to "
+"be reviewed by an authorized individual at a later time. This is useful for "
+"site administrators who want a quick overview of activities on their site. "
+"The logs also record the sequence of events, so it can be useful for "
+"debugging site errors."
+msgstr ""
+"Il modulo 'dblog' monìtora il tuo sistema, raccogliendo gli eventi di "
+"sistema in un log in modo da poter essere esaminati da una persona "
+"autorizzata in un secondo tempo. Ciò è particolarmente utile per quegli "
+"amministratori che vogliono una rapida panoramica delle attività compiute "
+"sul loro sito. I log inoltre registrano la cronologia degli eventi, così da "
+"essere utili per il debugging degli errori del sito."
+
+#: modules/dblog/dblog.module:22
+msgid ""
+"The dblog log is simply a list of recorded events containing usage data, "
+"performance data, errors, warnings and operational information. "
+"Administrators should check the dblog report on a regular basis to ensure "
+"their site is working properly."
+msgstr ""
+"Il log di dblog (log su database) è semplicemente una lista di eventi "
+"memorizzati contenenti informazioni sull'utilizzo, informazioni sulle "
+"prestazioni, errori, avvertimenti e informazioni di gestione. Gli "
+"amministratori dovrebbero controllare il rapporto (report) di dblog "
+"regolarmente in modo da essere sicuri che il loro sito funzioni "
+"correttamente."
+
+#: modules/dblog/dblog.module:23
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@dblog"
+"\">Dblog module</a>."
+msgstr ""
+"Per maggiori informazioni consulta il manuale on-line per il <a href=\"@dblog"
+"\">modulo 'dblog'</a>."
+
+#: modules/dblog/dblog.module:26
+msgid ""
+"The dblog module monitors your website, capturing system events in a log to "
+"be reviewed by an authorized individual at a later time. The dblog log is "
+"simply a list of recorded events containing usage data, performance data, "
+"errors, warnings and operational information. It is vital to check the dblog "
+"report on a regular basis as it is often the only way to tell what is going "
+"on."
+msgstr ""
+"Il modulo 'dblog' monìtora il tuo sito, raccogliendo gli eventi di sistema "
+"in un log in modo da poter essere esaminati da una persona autorizzata in un "
+"secondo tempo. Il log di dblog è semplicemente una lista di eventi "
+"memorizzati contenenti informazioni sull'utilizzo, informazioni sulle "
+"prestazioni, errori, avvertimenti e informazioni di gestione. È molto "
+"importante controllare periodicamente il report di dblog dal momento che  è "
+"spesso l'unico modo per sapere quello che succede."
+
+#: modules/dblog/dblog.module:47
+msgid ""
+"Settings for logging to the Drupal database logs. This is the most common "
+"method for small to medium sites on shared hosting. The logs are viewable "
+"from the admin pages."
+msgstr ""
+"Impostazioni per la registrazione nel database dei log di Drupal. Questo è "
+"il metodo più comune per piccoli e medi siti su hosting condiviso. I log "
+"sono visualizzabili dalle pagine di amministrazione."

@@ -1,0 +1,27 @@
+/*
+** Styles to override the styles.css in
+** bluemarine.css
+** $Id$
+*/
+/*
+* Plain white right nav.
+*/
+#sidebar-right {
+border-left: 1px solid #ea940c;
+background-color: white;
+}
+/*
+* Add background image.
+*/
+#sidebar-left {
+background: url(leMonde_sidebar.png) no-repeat top left;
+border-right: 1px solid #ea940c;
+}
+/*
+* Set the background for the mission.
+*/
+#mission {
+background-color: #ea940c;
+padding: 5px 15px 5px 15px;
+text-align: center;
+}
