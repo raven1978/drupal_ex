@@ -1,0 +1,75 @@
+<?php
+
+// $Id$
+/**
+ * The sitenews module.
+ * This module adds a content type (News Brief), and
+ * provides an action (Send site news) that allows
+ * administrators to send periodic updates (via email)
+ * about the latest happenings.
+ *
+ * It also defines a new hook (hook_sitenews()) and
+ * defines a new filter (News Brief Placeholders).
+ *
+ * @file
+ */
+
+/**
+ * Implementation of hook_help().
+ */
+function sitenews_help($path, $arg) {
+    if ($path == 'admin/help#sitenews') {
+        $txt = 'Keep users up-to-date by sending them a status '
+                . 'report about the latest site happenings. To use this '
+                . 'module, you will need to assign a trigger to the '
+                . '"Send site news as email to all users" action. It '
+                . 'is recommended that the node publish event be tied to this'
+                . 'action, as that will result in the site news being sent'
+                . 'whenever a new "news brief" node is published.';
+        $replace = array();
+        return '<p>' . t($txt, $replace) . '</p>';
+    }
+}
+
+/**
+ * Create the 'newsbrief' content type.
+ * Implements hook_node_info().
+ *
+ */
+function sitenews_node_info() {
+    return array(
+        'newsbrief' => array(
+            'module' => 'sitenews',
+            'name' => t('News Brief'),
+            'description' => t("A news brief about the state of the site."),
+            'has_title' => TRUE,
+            'title_label' => t('Title'),
+            'has_body' => TRUE,
+            'body_label' => t('News Brief'),
+        )
+    );
+}
+
+/**
+ * Create the form for editing News Brief nodes.
+ * Implements hook_form().
+ *
+ */
+function sitenews_form(&$node) {
+    $type = node_get_types('type', $node);
+    if ($type->has_title) {
+        $form['title'] = array(
+            '#type' => 'textfield',
+            '#title' => check_plain($type->title_label),
+            '#required' => true,
+            '#default_value' => $node->title,
+            '#weight' => -5,
+        );
+    }
+    if ($type->has_body) {
+        $form['body_field'] = node_body_field(
+                $node, $type->body_label, $type->min_word_count
+        );
+    }
+    return $form;
+}

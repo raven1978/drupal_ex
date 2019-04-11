@@ -1,0 +1,6 @@
+; $Id$
+name = "Site News"
+description = "Send an email message of site news to all users."
+core = 6.x
+php = 5.1
+dependencies[] = "trigger"
