@@ -1,0 +1,61 @@
+<?php
+
+// $Id$
+/**
+ * Install the biography module, including it's content (node)
+ * type.
+ * @file
+ */
+
+/**
+ * Implementation of hook_install().
+ */
+function biography_install() {
+    drupal_install_schema('biography');
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function biography_uninstall() {
+    drupal_uninstall_schema('biography');
+}
+
+/**
+ * Implementation of hook_schema().
+ */
+function biography_schema() {
+    $schema['biography'] = array(
+        'fields' => array(
+            'vid' => array(
+                'type' => 'int',
+                'unsigned' => TRUE,
+                'not null' => TRUE,
+                'default' => 0,
+            ),
+            'nid' => array(
+                'type' => 'int',
+                'unsigned' => TRUE,
+                'not null' => TRUE,
+                'default' => 0,
+            ),
+            'dates' => array(
+                'type' => 'varchar',
+                'length' => 127,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+// Note: On MySQL, text fields cannot have default values.
+            'life' => array('type' => 'text', 'not null' => FALSE),
+            'works' => array('type' => 'text', 'not null' => FALSE),
+        ),
+        'indexes' => array(
+            'nid' => array('nid'),
+        ),
+// Version is primary key. Could do nid, vid.
+        'primary key' => array('vid'),
+    );
+    return $schema;
+}
+
+

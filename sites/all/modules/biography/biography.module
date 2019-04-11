@@ -1,0 +1,242 @@
+<?php
+
+// $Id$
+/**
+ * Provides the biography content type.
+ * @file
+ */
+
+/**
+ * implementation of hook_help().
+ */
+function biography_help($path, $arg) {
+    if ($path == 'admin/help#biography') {
+        $txt = 'A biography is a textual description of a '
+                . 'person\'s life and works. The summary should give '
+                . 'a brief overview of the person explaining why the '
+                . 'person is important. The \'dates\' area should '
+                . 'provide information on birth date and death date for '
+                . 'the person. This field is free-text, and might look '
+                . 'like this: \'c. 500 BCE-450 BCE\'. \'Life\' should '
+                . 'provide a biography of the person, and \'Works\' '
+                . 'should contain a list of this person\'s works.';
+        $replace = array();
+        return '<p>' . t($txt, $replace) . '</p>';
+    }
+}
+
+/**
+ * Implements hook_node_info().
+ */
+function biography_node_info() {
+    return array(
+        'biography' => array(
+            'name' => t('Biography'),
+            'module' => 'biography',
+            'description' => t('A biography of a person.'),
+            'has_title' => TRUE,
+            'title_label' => t('Biography of'),
+            'has_body' => TRUE,
+            'body_label' => t('Overview'),
+        )
+    );
+}
+
+function biography_form(&$node) {
+//    echo "<pre>";
+//    print_r($node);
+//    echo "</pre>";
+//    exit();
+    $type = node_get_types('type', $node);
+//    echo "<pre>";
+//    print_r($type);
+//    echo "</pre>";
+//    exit();
+// Existing files: title (Biography of) and body (Overview)
+    if ($type->has_title) {
+        $form['title'] = array(
+            '#type' => 'textfield',
+            '#title' => check_plain($type->title_label),
+            '#required' => TRUE,
+            '#default_value' => $node->title,
+            '#weight' => -5,
+        );
+    }
+
+    if ($type->has_body) {
+        $form['body_field'] = node_body_field(
+                $node, $type->body_label, $type->min_word_count
+        );
+    }
+
+//    echo "<pre>";
+//    print_r($form);
+//    echo "</pre>";
+//    exit();
+// Our custom fields: Dates, Life, Works.
+// (See FAPI docs for specification)
+    $form['dates'] = array(
+        '#type' => 'textfield',
+        '#size' => 50,
+        '#maxlengh' => 127,
+        '#title' => t('Dates'),
+        '#description' => t('Birth and death dates.'),
+        '#default_value' => isset($node->dates) ? $node->dates : '',
+    );
+    $form['life'] = array(
+        '#type' => 'textarea',
+        '#title' => t('Life'),
+        '#cols' => 50,
+        '#rows' => 15,
+        '#description' => t('A description of this person\'s life.'),
+        '#default_value' => isset($node->life) ? $node->life : '',
+    );
+    $form['works'] = array(
+        '#type' => 'textarea',
+        '#title' => t('Works'),
+        '#cols' => 50,
+        '#rows' => 5,
+        '#description' => t('An annotated bibliography of this person\'s
+works.'),
+        '#default_value' => isset($node->works) ? $node->works : '',
+    );
+    return $form;
+}
+
+/**
+ * Implements hook_perm()
+ */
+function biography_perm() {
+    return array(
+        'create biography node',
+        'edit biography nodes',
+        'delete biography nodes',
+    );
+}
+
+/**
+ * Implements hook_access()
+ */
+function biography_access($op, $node, $account) {
+    switch ($op) {
+        case 'create':
+            return user_access('create biography node', $account);
+        case 'update':
+            return user_access('edit biography nodes', $account);
+        case 'delete':
+            return user_access('delete biography nodes', $account);
+    }
+}
+
+/**
+ * implements hook_insert().
+ */
+function biography_insert($node) {
+    if (!isset($node->life)) {
+        $node->life = '';
+    }
+    if (!isset($node->works)) {
+        $node->works = '';
+    }
+    db_query(
+            'INSERT INTO {biography} (vid, nid, dates, life, works) '
+            . "VALUES (%d, %d, '%s', '%s','%s')", $node->vid, $node->nid, $node->dates, $node->life, $node->works
+    );
+}
+
+/**
+ * implements hook_update().
+ */
+function biography_update($node) {
+    if ($node->revision) {
+        biography_insert($node);
+    } else {
+        db_query("UPDATE {biography} "
+                . "SET dates = '%s', life = '%s', works='%s' "
+                . "WHERE vid = %d", $node->dates, $node->life, $node->works, $node->vid
+        );
+    }
+}
+
+/**
+ * Implements hook_delete().
+ */
+function biography_delete($node) {
+    db_query(
+            'DELETE FROM {biography} WHERE nid = %d', $node->nid
+    );
+}
+
+/**
+ * This implementation just handles deleting node revisions.
+ * Implements hook_nodeapi().
+ */
+function biography_nodeapi(&$node, $op, $teaser, $page) {
+    if ($op == 'delete revision') {
+        db_query(
+                'DELETE FROM {biography} WHERE vid = %d', $node->vid
+        );
+    }
+}
+
+/**
+ * Implementation of hook_load().
+ */
+function biography_load($node) {
+    $result = db_query(
+            'SELECT dates, life, works FROM {biography} WHERE vid = %d', $node->vid
+    );
+
+    $result = db_fetch_object($result);
+
+//    echo "<pre>aaaa";
+//    print_r($result);
+//    echo "</pre>";
+//    exit();
+
+    return $result;
+}
+
+/**
+ * Implementation of hook_view().
+ */
+function biography_view($node, $teaser = FALSE, $page = FALSE) {
+
+//    echo "<pre>BEFORE";
+//    print_r($node);
+//    echo "</pre>";
+
+    $node = node_prepare($node, $teaser); // get it ready for display
+//    echo "<pre>AFTER";
+//    print_r($node);
+//    echo "</pre>";
+//    exit();
+
+    $dates = check_plain($node->dates);
+    $life = check_markup($node->life);
+    $works = check_markup($node->works);
+// Add theme stuff here
+    $node->content['biography_info'] = array(
+        '#value' => theme('biography_info', $dates, $life, $works),
+        '#weight' => 1,
+    );
+
+    return $node;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function biography_theme() {
+
+    return array(
+        'biography_info' => array(
+            'template' => 'biography_info',
+            'arguments' => array(
+                'dates' => NULL,
+                'life' => NULL,
+                'works' => NULL,
+            ),
+        ),
+    );
+}
